@@ -1,5 +1,5 @@
 <join-button class="bg-yellow">
     <a class="join-button__link" href=""></a>
-    <p class="join-button__tagline">See how <b>YOU</b><br/> can join in</p>
+    <p class="join-button__tagline">See how <b>YOU</b> can join in</p>
     <span class="join-button__click-here">Click here!</span>
 </join-button>

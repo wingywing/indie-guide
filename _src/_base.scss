@@ -9,8 +9,24 @@
     section:not(.home-page-hero){
         padding: 4rem 0;
     }
+    section:last-of-type{
+        &::before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: $light-grey;
+            z-index: -1;
+        }
+        position: relative;
+        display: flex;
+        border-collapse: separate; 
+        @include bottom-rounded;
+        background-color: $lightest-grey;
+    }
+
     .home-page-hero{
-        @include bottom-rounded();
+        @include bottom-rounded;
         background-color: $white;
         display: block;
         grid-column: 1/13;
@@ -31,5 +47,9 @@
             justify-self: flex-end;
             margin-bottom: -5vw;
         }
+    }
+
+    .home-page-links {
+        max-width: unset;
     }
 }
