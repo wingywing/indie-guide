@@ -16,4 +16,29 @@
         }
         text-align: center;
     }
+    .home-page-links {
+        .home-page__link-grid {
+            $mobile-gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            grid-column: 2/12;
+            gap: $mobile-gap;
+            link-button, join-button {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .row-one, .row-two, .row-three {
+                display: flex;
+                flex-direction: column;
+                gap: $mobile-gap;
+            }
+            .row-two {
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: $mobile-gap;
+                }
+            }
+        }
+    }
 }
