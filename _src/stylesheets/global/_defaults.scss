@@ -16,8 +16,7 @@ $base-font: 16px;
     font-family: 'red-hat';
 }
 body {
-
-    *:empty {
+    *:empty:not(:any-link) {
         display: none;
         visibility: hidden;
     }
@@ -52,7 +51,7 @@ $colours: (
 
 @mixin generate-bg-classes($colour-map){
     @each $name, $colour in $colour-map {
-        .bg-#{$name}{
+        .bg-#{"" + $name}{
             background-color: #{$colour};
         }
     }

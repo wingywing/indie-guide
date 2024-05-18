@@ -1,5 +1,5 @@
 <link-button :class="this.class">
-    <slot name="image"></a>
+    <a :href="href"></a>
     <div class="link-button__text">
         <slot name="image"></slot>
         <slot name="text"></slot>

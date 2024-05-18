@@ -16,8 +16,14 @@
     }
 }
 
-@mixin box-shadow($colour: $orange) {
-    box-shadow: .5rem .5rem 0 $colour;
+@mixin button-shadow($shadow: $orange) {
+    &:hover {
+        filter: brightness(1.1) saturate(1.1);
+        box-shadow: 0 0 0 $shadow;
+        transform: translate(.5rem, .5rem);        
+    }
+    box-shadow: .5rem .5rem 0 $shadow;
+    transition: all .3s;
 }
 
 //Colour variables

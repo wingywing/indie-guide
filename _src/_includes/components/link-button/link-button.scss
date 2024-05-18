@@ -1,12 +1,20 @@
 @import '../../../stylesheets/global/mixins';
 
 link-button {
-    @include box-shadow();
+    @include button-shadow();
     display: block;
     width: fit-content;
     height: fit-content;
     font-family: 'neue-machina';
     padding: 2.1333333333rem;
+    position: relative;
+    a {
+        left: 0;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
     p {
         margin: 0;
         padding: 0;
