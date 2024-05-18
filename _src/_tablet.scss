@@ -1,7 +1,33 @@
-@use './stylesheets/global/global.scss' as global;
+@import './stylesheets/global/mixins';
 
 @mixin home-page-tablet(){
-    @include global.tablet{
-        
+    @include tablet{
+        .home-page-hero{
+            padding-bottom: 5rem;
+            
+            .hero-block__heading {
+                grid-column: 2/8;
+                grid-row: 1;
+                z-index: 1;
+                align-self: flex-end;
+                margin-bottom: 0;
+                object {
+                    width: 100%;
+                }
+            }
+            object {
+                max-width: unset;
+                grid-column: 8/12;
+            }
+            .main-grid {
+                height: 100%;
+                > object {
+                    width: 100%;
+                    grid-row: 1;
+                    align-self: flex-end;
+                    justify-self: flex-end;
+                }
+            }
+        }
     }
 }

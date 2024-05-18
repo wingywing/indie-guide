@@ -4,5 +4,92 @@ navtitle: Home
 ---
 
 <div id="home-page">
-  
+      {% renderTemplate "webc" %}
+        <section class="home-page-hero">
+          <hero-block class="bg-white">
+            <object type="image/svg+xml" data="./assets/img/home-page-logo.svg" slot="heading">
+            <h1>An indie guide to the IndieWeb</h1>
+            <span>Build your home on the internet</span>
+            </object>
+            <object type="image/svg+xml" data="./assets/img/home-page-graphic.svg" slot="bg-image">
+            </object>
+        </hero-block>
+      {% endrenderTemplate %}
+
+        {# </section>
+        <section class="home-page-quote">
+          <half-half>
+            <big-quote slot="first">
+              <p slot="quote">
+                A <span class="text-orange">people-focused</span> alternative to the “corporate web”.
+              </p>
+              <span class="attribution" slot="attribution">
+                (<a href="https://www.indieweb.org">IndieWeb</a>, 2024 )
+              </span>
+            </big-quote>
+          </half-half>
+        </section>
+        <section class="home-page-links">
+          <div class="home-page__link-grid">
+            <div class="row-one">
+              <link-button class="bg-white orange" href="#">
+                <p slot="text">About this site</p>
+              </link-button>
+              <link-button class="bg-white yellow" href="#">
+                <p slot="text">What is IndieWeb?</p>
+              </link-button>
+              <link-button class="bg-white red" href="#">
+                <p slot="text">Building blocks</p>
+              </link-button>
+            </div>
+            <div class="row-two">
+              <div class="left">
+                <join-button></join-button>
+              </div>
+              <div class="right">
+                <link-button class="bg-white orange" href="#">
+                  <p slot="text"><span class="underline">All</span> are welcome!</p>
+                </link-button>
+                <link-button class="bg-white orange" href="#">
+                  <p slot="text">Critique of current social media</p>
+                </link-button>
+                <link-button class="bg-white orange" href="#">
+                  <p slot="text">Bring back a <span class="underline">fun</span> interweb</p>
+                </link-button>
+              </div>
+            </div>
+            <div class="row-three">
+              <link-button class="bg-white orange" href="#">
+                <p slot="text">Research methodology and results</p>
+              </link-button>
+              <link-button class="bg-white orange" href="#">
+                <p slot="text">Reference list</p>
+            </link-button>
+            </div>
+          </div>
+        </section>
+
+        <popup-media href="#">
+          <p slot="attribution">Test</p>
+          <img src="../../assets/img/Oglington.gif" alt="" slot="media">
+        </popup-media>
+
+        <join-button>
+        </join-button>
+        <big-quote>
+          <p slot="quote">
+            “Decentralised media gives you a way to really connect with people with shared interests, and [...] the opportunity to think and choose what you want, where you want to be, and who you want to connect with.”
+          </p>
+          <span slot="attribution">
+            Kiara Jouhanneau, a survey participant who's a part of the IndieWeb
+          </span>
+        </big-quote>
+        <link-button class="bg-yellow" href="#">
+          <p slot="text">Getting your own domain</p>
+        </link-button>
+        <paragraph-block class="transparent">
+          <p slot="paragraph">The IndieWeb is designed to be modular in nature. It is connected through reusable building blocks of code that can work across different website and apps.
+            These are pieces of code that help to facilitate interactions and connect websites to one another. This page will give a general sense of what some common building blocks are, but if you’re a developer, feel free to read more about it on the IndieWeb wiki (IndieWeb, 2024)!</p>
+        </paragraph-block> #}
+
 </div>

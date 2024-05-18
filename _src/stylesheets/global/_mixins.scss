@@ -25,6 +25,10 @@
     transition: all .3s;
 }
 
+@mixin bottom-rounded {
+    border-radius: 0 0 3em 3em;
+}
+
 //Colour variables
 
 $orange: #FF5C00;
@@ -39,16 +43,17 @@ $white: #FFFFFF;
 @mixin main-grid {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 0.625rem;
+    gap: 10px;
+    max-width: 1440px;
     width: 100%;
     margin: auto;
     @include tablet {
-        gap: 1.25rem;
+        gap: 20px;
     }
     @include desktop {
-        gap: 2rem;
+        gap: 32px;
     }
     @include wide {
-        gap: 2.5rem;
+        gap: 40px;
     }
 }

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{ '/css/webmentions.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="stylesheet" href="{{ '/stylesheets/global/global.css' | url }}">
+    <link rel="stylesheet" href="{{ 'index.css' | url }}">
+
     <link rel="pingback" href="https://webmention.io/{{ metadata.domain }}/xmlrpc">
     <link rel="webmention" href="https://webmention.io/{{ metadata.domain }}/webmention">
     <a aria-hidden href="https://github.com/wingywing" rel="me" style="display: none; visibility: hidden;">Wing on Github</a>
@@ -19,34 +21,6 @@
       <site-header></site-header>
     {% endrenderTemplate %}
     <main>
-
-      {% renderTemplate "webc" %}
-        <popup-media href="#">
-          <p slot="attribution">Test</p>
-          <img src="../../assets/img/Oglington.gif" alt="" slot="media">
-        </popup-media>
-        <hero-block class="transparent">
-          <h1 slot="heading">What is the IndieWeb?</h1>
-        </hero-block>
-        <join-button>
-        </join-button>
-        <big-quote>
-          <p slot="quote">
-            “Decentralised media gives you a way to really connect with people with shared interests, and [...] the opportunity to think and choose what you want, where you want to be, and who you want to connect with.”
-          </p>
-          <span slot="attribution">
-            Kiara Jouhanneau, a survey participant who's a part of the IndieWeb
-          </span>
-        </big-quote>
-        <link-button class="bg-yellow" href="#">
-          <p slot="text">Getting your own domain</p>
-        </link-button>
-        <paragraph-block class="transparent">
-          <p slot="paragraph">The IndieWeb is designed to be modular in nature. It is connected through reusable building blocks of code that can work across different website and apps.
-            These are pieces of code that help to facilitate interactions and connect websites to one another. This page will give a general sense of what some common building blocks are, but if you’re a developer, feel free to read more about it on the IndieWeb wiki (IndieWeb, 2024)!</p>
-        </paragraph-block>
-      {% endrenderTemplate %}
-
         {{ content | safe }}
     </main>
     {% renderTemplate "webc" %}

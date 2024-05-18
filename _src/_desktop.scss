@@ -1,7 +1,7 @@
-@use './stylesheets/global/global.scss' as global;
+@import './stylesheets/global/mixins';
 
 @mixin home-page-desktop(){
-    @include global.desktop{
+    @include desktop{
         
     }
 }

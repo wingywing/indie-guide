@@ -1,6 +1,8 @@
 <hero-block :class="this.class">
-    <div class="hero-block__heading">
-        <slot name="heading"></slot>
+    <div class="main-grid">
+        <div class="hero-block__heading">
+            <slot name="heading"></slot>
+        </div>
+        <slot class="hero-block__bg-image" name="bg-image"></slot>
     </div>
-    <slot class="hero-block__bg-image" name="bg-image"></slot>
 </hero-block>

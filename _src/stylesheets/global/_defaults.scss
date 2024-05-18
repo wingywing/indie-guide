@@ -24,7 +24,11 @@ body {
     transition: all, .3s;
     background: $lightest-grey;
     margin: 0;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
+
 h1 {
     @include tablet(){
     font-size: 6.8666666667rem;
@@ -46,6 +50,8 @@ a {
 }
 .main-grid {
     @include main-grid();
+    height: 100%;
+    width: 100%;
 }
 //colour helpers
 
@@ -63,6 +69,11 @@ $colours: (
     @each $name, $colour in $colour-map {
         .bg-#{"" + $name}{
             background-color: #{$colour};
+        }
+    }
+    @each $name, $colour in $colour-map {
+        .text-#{"" + $name}{
+            color: #{$colour};
         }
     }
 }

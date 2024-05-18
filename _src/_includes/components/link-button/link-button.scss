@@ -2,6 +2,15 @@
 
 link-button {
     @include button-shadow();
+    &.orange {
+        @include button-shadow($orange);
+    }
+    &.yellow {
+        @include button-shadow($yellow);
+    }
+    &.red {
+        @include button-shadow($red);
+    }
     display: block;
     width: fit-content;
     height: fit-content;

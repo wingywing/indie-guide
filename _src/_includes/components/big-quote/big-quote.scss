@@ -17,9 +17,12 @@ big-quote {
             font-size: 2.6666666667rem;
         }
     }
-    span {
+    .attribution {
         font-size: 1.0666666667rem;
         max-width: 30ch;
         color: $orange;
+        a {
+            color: $orange;
+        }
     }
 }

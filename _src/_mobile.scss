@@ -1,5 +1,13 @@
-@use './stylesheets/global/global.scss' as global;
+@import './stylesheets/global/mixins';
+@import './stylesheets/global/defaults';
+@import './stylesheets/global/variables';
 
 @mixin home-page-mobile(){
-    
+    hero-block {
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1/13;
+        padding-top: $header-mobile;
+        margin-top: -$header-mobile;
+    }
 }
