@@ -10,19 +10,7 @@
         padding: 4rem 0;
     }
     section:last-of-type{
-        &::before {
-            position: absolute;
-            content: '';
-            height: 100%;
-            width: 100%;
-            background-color: $light-grey;
-            z-index: -1;
-        }
-        position: relative;
-        display: flex;
-        border-collapse: separate; 
-        @include bottom-rounded;
-        background-color: $lightest-grey;
+        @include round-for-footer;
     }
 
     .home-page-hero{
@@ -30,7 +18,6 @@
         background-color: $white;
         display: block;
         grid-column: 1/13;
-        width: 100dvw;
         max-width: unset;
         .hero-block__heading {
             grid-column: 2/12;

@@ -7,10 +7,10 @@ $base-font: 16px;
         font-size: calc(1.25 * $base-font);
     }
     @include desktop {
-        font-size: calc(1.5 * $base-font);
+        font-size: calc(1.4 * $base-font);
     }
     @include wide {
-        font-size: calc(1.875 * $base-font);   
+        font-size: calc(1.5 * $base-font);   
     }
     color: $black;
     font-family: 'red-hat';
@@ -31,13 +31,14 @@ body {
 
 h1 {
     @include tablet(){
-    font-size: 6.8666666667rem;
+    font-size: 5.2rem;
     }
     font-family: 'neue-machina';
     line-height: .9;
     font-weight: normal;
     transition: all .3s;
-    margin-block: 0;
+    text-wrap: balance;
+    padding-block: 2rem;
 }
 h2 {
     font-family: 'neue-machina';

@@ -1,0 +1,46 @@
+@import '../stylesheets/global/mixins';
+@import '../stylesheets/global/variables';
+
+
+#about-page{
+    @include round-for-footer;
+    min-height: calc(100dvh - $header-mobile);
+    padding-bottom: 20rem;
+    .main-grid {
+        position: relative;
+    }
+    .bg-image {
+        position: absolute;
+        grid-column: 1/11;
+        width: 100%;
+        height: 100%;
+        bottom: -35rem;
+    }
+    h1 {
+        grid-column: 2/12;
+        margin: 0;
+        z-index: 1;
+    }
+    p, ul {
+        grid-column: 2/12;
+        margin: 0;
+        max-width: 52ch;
+        z-index: 1;
+    }
+    @include tablet {
+        padding: 6rem 0;
+        padding-bottom: 30rem;
+        .bg-image {
+            bottom: -40rem;
+        }
+    }
+    @include desktop {
+        padding-bottom: 20rem;
+        .bg-image {
+            bottom: -20rem;
+        }
+        p, ul {
+            grid-column: 6/11;
+        }
+    }
+}
