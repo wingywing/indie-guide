@@ -1,17 +1,10 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://myurl.com/",
-  "domain": "myurl.com",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
-  "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "url": "https://myurl.com/feed/feed.xml",
-    "id": "https://myurl.com/"
-  },
+  "title": "indieweb.guide",
+  "url": "https://indieweb.guide/",
+  "domain": "indieweb.guide",
+  "description": "An indie guide to the IndieWeb.",
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com"
+    "name": "Wing Pang",
+    "email": "hello@indieweb.guide"
   }
 }
