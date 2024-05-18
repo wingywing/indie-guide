@@ -5,7 +5,36 @@ site-header {
     background-color: $white;
     width: 100%;
     display: block;
+    border-radius: 0 0 3em 3em;
+    .main-grid {
+        padding: 1em 0;
+    }
+    .site-header__home-link {
+        grid-column: 2/11;
+        font-weight: bold;
+        color: $white;
+        background: $orange;
+        width: fit-content;
+        height: max-content;
+        text-decoration: none;
+        padding: 1em;
+        justify-self: center;
+    }
+    .site-header__wiki-link {
+        grid-column: 2/11;
+        text-align: center;
+        justify-self: center;
+    }
     @include tablet(){
-        
+        .site-header__home-link {
+            grid-column: 2/7;
+            justify-self: start;
+            align-self: center;
+        }
+        .site-header__wiki-link {
+            grid-column: 7/12;
+            justify-self: end;
+            align-self: center;
+        }
     }
 }

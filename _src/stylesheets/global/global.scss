@@ -8,7 +8,15 @@
 //Defaults
 :root {
     * {
-        font-size: 1.875rem;
+        font-size: 1.25rem;
+        text-wrap: pretty;
+        transition: all, .3s;
+        @include tablet {
+            font-size: 1.5rem;
+        }
+        @include desktop {
+            font-size: 1.875rem;
+        }
     }
     color: $black;
     font-family: 'red-hat';
@@ -20,6 +28,11 @@ body {
 h1 {
     font-family: 'neue-machina';
     font-weight: normal;
+}
+a {
+    color: $black;
+    text-decoration: underline $yellow;
+    text-underline-offset: .2rem;
 }
 .main-grid {
     @include main-grid();
