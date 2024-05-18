@@ -1,3 +1,31 @@
+@import '../../../stylesheets/global/variables';
+@import '../../../stylesheets/global/mixins';
+
 join-button {
-    
+    @include button-shadow();
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    padding: 2.1333333333rem;
+    font-family: 'neue-machina';
+    background-image: url('../../../assets/img/join-button-bg.svg');
+    background-position: top left;
+    background-size: cover;
+    padding-bottom: 5rem;
+    p {
+        color: $white;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+    span {
+        text-decoration: underline;
+        color: $white;
+    }
+    @include tablet {
+        padding-bottom: 6rem;
+        p {
+            font-size: 2.6666666667rem;
+        }
+    }
 }
