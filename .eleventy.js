@@ -5,12 +5,24 @@ const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const eleventyWebc = require('@11ty/eleventy-plugin-webc')
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help")
 const webmentions = require("./_data/webmentions.js")
+const { EleventyRenderPlugin } = require("@11ty/eleventy")
+const eleventySass = require("eleventy-sass")
+const nodeSassGlobbing = require("node-sass-globbing")
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addFilter('sass', function(code){
+    return sassFalse.renderSync({
+      data: code,
+      importer: nodeSassGlobbing,
+    }).css.toString();
+  })
+  eleventyConfig.addPlugin(EleventyRenderPlugin)
   eleventyConfig.addPlugin(webmentions)
   eleventyConfig.addPlugin(UpgradeHelper)
+  eleventyConfig.addPlugin(eleventySass); //to add SASS support from src
   eleventyConfig.addPlugin(eleventyWebc, {
-    components: "_includes/components/**/*.src"  })
+    components: "_src/_includes/components/**/*.webc"  }
+  )
   eleventyConfig.setBrowserSyncConfig({
     files: './_site/**/*.css'
   })

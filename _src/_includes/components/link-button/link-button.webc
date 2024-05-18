@@ -1,0 +1,6 @@
+<link-button :class="this.class">
+    <a class="link-button__link" :href="href" ></a>
+    <p class="link-button__text">
+        <slot name="text"></slot>
+    </p>
+</link-button>
