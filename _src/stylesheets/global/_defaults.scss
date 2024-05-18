@@ -16,7 +16,7 @@ $base-font: 16px;
     font-family: 'red-hat';
 }
 body {
-    *:empty:not(:any-link):not(br) {
+    *:empty:not(:any-link):not(br):not(object):not(img) {
         display: none;
         visibility: hidden;
     }

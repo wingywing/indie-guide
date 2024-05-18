@@ -2,7 +2,9 @@
     <a class="popup-media__link" :href="href"></a>
     <div class="popup-media__topbar">
         <slot class="popup-media__attribution" name="attribution"></slot>
-        <div class="popup-media__topbar-icons"></div>
+        <object type="image/svg+xml" data="../../../assets/img/popup-media-buttons.svg"></object>
     </div>
-    <slot class="popup-media__media" name="media"></slot>
+    <div class="popup-media__media">
+        <slot class="popup-media__media" name="media"></slot>
+    </div>
 </popup-media>
