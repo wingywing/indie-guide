@@ -2,38 +2,8 @@
 @import './fonts';
 //mixins: breakpoints, colour, grid
 @import './mixins';
+//default styles
+@import './defaults';
 //components: component styles
 @import '../../_includes/components/components';
 
-//Defaults
-:root {
-    * {
-        font-size: 1.25rem;
-        text-wrap: pretty;
-        transition: all, .3s;
-        @include tablet {
-            font-size: 1.5rem;
-        }
-        @include desktop {
-            font-size: 1.875rem;
-        }
-    }
-    color: $black;
-    font-family: 'red-hat';
-}
-body {
-    background: $lightest-grey;
-    margin: 0;
-}
-h1 {
-    font-family: 'neue-machina';
-    font-weight: normal;
-}
-a {
-    color: $black;
-    text-decoration: underline $yellow;
-    text-underline-offset: .2rem;
-}
-.main-grid {
-    @include main-grid();
-}

@@ -1,4 +1,10 @@
 //Screen breakpoint mixins
+@mixin wide {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
 @mixin desktop {
     @media screen and (min-width: 1024px) {
         @content;
@@ -31,7 +37,9 @@ $white: #FFFFFF;
         gap: 1.25rem;
     }
     @include desktop {
+        gap: 2rem;
+    }
+    @include wide {
         gap: 2.5rem;
-        max-width: 1920px;
     }
 }
