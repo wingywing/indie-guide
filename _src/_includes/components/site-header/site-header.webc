@@ -1,4 +1,6 @@
 <site-header>
-    <a href="/">indieweb.guide</a>
-    <a href="https://indieweb.org/">Click here to go to the IndieWeb wiki</a>
+    <div class="main-grid">
+        <a href="/">indieweb.guide</a>
+        <a href="https://indieweb.org/">Click here to go to the IndieWeb wiki</a>
+    </div>
 </site-header>

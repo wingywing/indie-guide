@@ -5,13 +5,13 @@
         {% if webmention.author.photo %}
           <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" alt="{{ webmention.author.name }}">
         {% else %}
-          <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="">
+          <img class="webmention__author__photo" src="{{ '/assets/img/webmention-avatar-default.svg' | url }}" alt="">
         {% endif %}
         <strong class="p-name">{{ webmention.author.name }}</strong>
       </a>
     {% else %}
       <span class="webmention__author">
-        <img class="webmention__author__photo" src="{{ '/img/webmention-avatar-default.svg' | url }}" alt="">
+        <img class="webmention__author__photo" src="{{ '/assets/img/webmention-avatar-default.svg' | url }}" alt="">
         <strong>Anonymous</strong>
       </span>
     {% endif %}

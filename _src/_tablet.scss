@@ -1,0 +1,7 @@
+@use './stylesheets/global/global.scss' as global;
+
+@mixin home-page-tablet(){
+    @include global.tablet{
+        
+    }
+}

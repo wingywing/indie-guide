@@ -1,1 +1,26 @@
-@use "../../_includes/components/components.scss"
+//font imports: neue-machina, red-hat-display, red-hat-mono, red-hat, 
+@import './fonts';
+//mixins: breakpoints, colour, grid
+@import './mixins';
+//components: component styles
+@import '../../_includes/components/components';
+
+//Defaults
+:root {
+    * {
+        font-size: 1.875rem;
+    }
+    color: $black;
+    font-family: 'red-hat';
+}
+body {
+    background: $lightest-grey;
+    margin: 0;
+}
+h1 {
+    font-family: 'neue-machina';
+    font-weight: normal;
+}
+.main-grid {
+    @include main-grid();
+}

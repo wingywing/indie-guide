@@ -1,0 +1,37 @@
+//Screen breakpoint mixins
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+//Colour variables
+
+$orange: #FF5C00;
+$red: #FF0000;
+$yellow: #FFB100;
+$black: #0F0F0F;
+$light-grey: #EAEAEA;
+$lightest-grey: #F7F7F7;
+$white: #FFFFFF;
+
+//Grid mixin
+@mixin main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0.625rem;
+    width: 100%;
+    margin: auto;
+    @include tablet {
+        gap: 1.25rem;
+    }
+    @include desktop {
+        gap: 2.5rem;
+        max-width: 1920px;
+    }
+}
