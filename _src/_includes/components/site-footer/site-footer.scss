@@ -12,14 +12,14 @@ site-footer {
         @include tablet {
             font-size: 1rem;
         }
-        grid-column: 2/11;
+        grid-column: 2/12;
         text-align: center;
         width: fit-content;
         height: max-content;
         justify-self: center;
     }
     .site-footer__with-love {
-        grid-column: 2/11;
+        grid-column: 2/12;
         text-align: center;
         justify-self: center;
     }
