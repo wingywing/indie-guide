@@ -6,6 +6,9 @@
         @include main-grid();
         height: min-content;
     }
+    section:not(.home-page-hero){
+        padding: 4rem 0;
+    }
     .home-page-hero{
         @include bottom-rounded();
         background-color: $white;

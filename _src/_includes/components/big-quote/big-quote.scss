@@ -3,7 +3,7 @@
 
 big-quote {
     display: flex;
-    gap: 2.1333333333rem;
+    gap: inherit;
     flex-direction: column;
     padding-block: 4rem;
     p {
@@ -14,7 +14,7 @@ big-quote {
         font-size: 1.5rem;
         max-width: 30ch;
         @include tablet {
-            font-size: 2.6666666667rem;
+            font-size: 2rem;
         }
     }
     .attribution {
