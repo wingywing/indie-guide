@@ -19,16 +19,14 @@
       <site-header></site-header>
     {% endrenderTemplate %}
     <main>
-      <div class="main-grid">
 
-        {% renderTemplate "webc" %}
-        <link-button class="red" href="/">
-          <p slot="text"> Test </p>
+      {% renderTemplate "webc" %}
+        <link-button class="bg-yellow">
+          <p slot="text">Getting your own domain</p>
         </link-button>
       {% endrenderTemplate %}
 
         {{ content | safe }}
-      </div>
     </main>
     {% renderTemplate "webc" %}
       <site-footer></site-footer>

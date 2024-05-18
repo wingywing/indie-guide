@@ -16,6 +16,10 @@
     }
 }
 
+@mixin box-shadow($colour: $orange) {
+    box-shadow: .5rem .5rem 0 $colour;
+}
+
 //Colour variables
 
 $orange: #FF5C00;

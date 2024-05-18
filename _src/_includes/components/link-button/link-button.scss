@@ -1,3 +1,14 @@
+@import '../../../stylesheets/global/mixins';
+
 link-button {
-    background-color: red;
+    @include box-shadow();
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'neue-machina';
+    padding: 2.1333333333rem;
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }

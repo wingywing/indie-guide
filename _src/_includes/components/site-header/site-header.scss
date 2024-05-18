@@ -1,6 +1,5 @@
 @import '../../../stylesheets/global/mixins';
 
-
 site-header {
     background-color: $white;
     width: 100%;
@@ -17,7 +16,7 @@ site-header {
         width: fit-content;
         height: max-content;
         text-decoration: none;
-        padding: 1em;
+        padding: .25em .5em;
         justify-self: center;
     }
     .site-header__wiki-link {

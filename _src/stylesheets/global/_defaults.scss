@@ -1,21 +1,28 @@
+$base-font: 16px;
+
 //Defaults
 :root {
+    font-size: calc(1.2 * $base-font);
+    @include tablet {
+        font-size: calc(1.25 * $base-font);
+    }
+    @include desktop {
+        font-size: calc(1.5 * $base-font);
+    }
+    @include wide {
+        font-size: calc(1.875 * $base-font);   
+    }
     color: $black;
     font-family: 'red-hat';
 }
 body {
-    font-size: 1.25rem;
+
+    *:empty {
+        display: none;
+        visibility: hidden;
+    }
     text-wrap: pretty;
     transition: all, .3s;
-    @include tablet {
-        font-size: 1.25rem;
-    }
-    @include desktop {
-        font-size: 1.5rem;
-    }
-    @include wide {
-        font-size: 1.875rem;   
-    }
     background: $lightest-grey;
     margin: 0;
 }
@@ -31,3 +38,24 @@ a {
 .main-grid {
     @include main-grid();
 }
+//colour helpers
+
+$colours: (
+    orange: #FF5C00,
+    red: #FF0000,
+    yellow: #FFB100,
+    black: #0F0F0F,
+    light-grey: #EAEAEA,
+    lightest-grey: #F7F7F7,
+    white: #FFFFFF
+);
+
+@mixin generate-bg-classes($colour-map){
+    @each $name, $colour in $colour-map {
+        .bg-#{$name}{
+            background-color: #{$colour};
+        }
+    }
+}
+
+@include generate-bg-classes($colours)

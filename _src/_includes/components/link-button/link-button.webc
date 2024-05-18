@@ -1,7 +1,7 @@
 <link-button :class="this.class">
-    <a class="link-button__link" :href="href" ></a>
-    <p class="link-button__text">
+    <slot name="image"></a>
+    <div class="link-button__text">
         <slot name="image"></slot>
         <slot name="text"></slot>
-    </p>
+    </div>
 </link-button>

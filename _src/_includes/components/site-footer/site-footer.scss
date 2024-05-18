@@ -24,12 +24,15 @@ site-footer {
         .site-footer__wiki-link {
             grid-column: 2/7;
             justify-self: start;
-            align-self: center;
+            align-self: start;
+            text-align: left;
         }
         .site-footer__with-love {
+            white-space: no-wrap;
             grid-column: 7/12;
             justify-self: end;
-            align-self: center;
+            align-self: start;
+            text-align: right;
         }
     }
 }
