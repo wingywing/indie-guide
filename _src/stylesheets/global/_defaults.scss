@@ -26,8 +26,14 @@ body {
     margin: 0;
 }
 h1 {
+    @include tablet(){
+    font-size: 6.8666666667rem;
+    }
     font-family: 'neue-machina';
+    line-height: .9;
     font-weight: normal;
+    transition: all .3s;
+    margin-block: 0;
 }
 h2 {
     font-family: 'neue-machina';

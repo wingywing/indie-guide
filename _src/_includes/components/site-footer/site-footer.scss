@@ -9,6 +9,9 @@ site-footer {
         padding: 1em 0 2em 0;
     }
     .site-footer__wiki-link {
+        @include tablet {
+            font-size: 1rem;
+        }
         grid-column: 2/11;
         text-align: center;
         width: fit-content;

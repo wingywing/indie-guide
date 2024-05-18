@@ -1,3 +1,18 @@
+@import '../../../stylesheets/global/variables';
+@import '../../../stylesheets/global/mixins';
+
 hero-block {
-    
+    display: flex;
+    height: max-content;
+    transition: all, .3s;
+    .hero-block__heading {
+        margin: 4rem 0;
+        height: min-content;
+    }
+    @include desktop {
+        height: calc(60dvh - $header-desktop);
+    }
+    @include wide {
+        height: calc(80dvh - $header-wide);
+    }
 }

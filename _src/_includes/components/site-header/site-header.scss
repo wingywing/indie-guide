@@ -9,6 +9,7 @@ site-header {
         padding: 1em 0;
     }
     .site-header__home-link {
+        font-family: 'neue-machina';
         grid-column: 2/11;
         font-weight: bold;
         color: $white;
@@ -16,7 +17,7 @@ site-header {
         width: fit-content;
         height: max-content;
         text-decoration: none;
-        padding: .25em .5em;
+        padding: .5em;
         justify-self: center;
     }
     .site-header__wiki-link {
