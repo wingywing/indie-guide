@@ -10,4 +10,9 @@
         padding-top: $header-mobile;
         margin-top: -$header-mobile;
     }
+    .home-page-quote {
+        half-half {
+            grid-column: 2/12;
+        }
+    }
 }

@@ -14,21 +14,28 @@ navtitle: Home
             <object type="image/svg+xml" data="./assets/img/home-page-graphic.svg" slot="bg-image">
             </object>
         </hero-block>
-      {% endrenderTemplate %}
+        </section>
 
-        {# </section>
         <section class="home-page-quote">
           <half-half>
             <big-quote slot="first">
-              <p slot="quote">
+              <p class="text-center" slot="quote">
                 A <span class="text-orange">people-focused</span> alternative to the “corporate web”.
               </p>
-              <span class="attribution" slot="attribution">
+              <span class="attribution text-center" slot="attribution">
                 (<a href="https://www.indieweb.org">IndieWeb</a>, 2024 )
               </span>
             </big-quote>
+            <popup-media href="#" slot="second">
+              <p slot="attribution">(<a href="https://www.youtube.com/watch?v=DKU4RFifCIU">Name.com</a>, 2018)</p>
+              <iframe slot="media" src="https://www.youtube-nocookie.com/embed/DKU4RFifCIU?si=r-OBxEJWC_aasoX3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </popup-media>
           </half-half>
         </section>
+
+        {% endrenderTemplate %}
+
+
         <section class="home-page-links">
           <div class="home-page__link-grid">
             <div class="row-one">
@@ -90,6 +97,6 @@ navtitle: Home
         <paragraph-block class="transparent">
           <p slot="paragraph">The IndieWeb is designed to be modular in nature. It is connected through reusable building blocks of code that can work across different website and apps.
             These are pieces of code that help to facilitate interactions and connect websites to one another. This page will give a general sense of what some common building blocks are, but if you’re a developer, feel free to read more about it on the IndieWeb wiki (IndieWeb, 2024)!</p>
-        </paragraph-block> #}
+        </paragraph-block>
 
 </div>

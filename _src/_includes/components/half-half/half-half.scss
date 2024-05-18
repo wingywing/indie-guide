@@ -1,4 +1,15 @@
+@import '../../../stylesheets/global/variables';
+@import '../../../stylesheets/global/mixins';
+
 half-half {
     display: flex;
     gap: inherit;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    @include desktop {
+        flex-direction: row;
+    }
 }

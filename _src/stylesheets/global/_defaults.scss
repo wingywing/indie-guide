@@ -16,7 +16,7 @@ $base-font: 16px;
     font-family: 'red-hat';
 }
 body {
-    *:empty:not(:any-link):not(br):not(object):not(img) {
+    *:empty:not(:any-link):not(br):not(object):not(img):not(iframe) {
         display: none;
         visibility: hidden;
     }
@@ -78,4 +78,16 @@ $colours: (
     }
 }
 
-@include generate-bg-classes($colours)
+@include generate-bg-classes($colours);
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
