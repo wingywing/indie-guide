@@ -2,8 +2,15 @@ const { DateTime } = require('luxon')
 const sanitizeHTML = require('sanitize-html')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const eleventyWebc = require('@11ty/eleventy-plugin-webc')
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help")
+const webmentions = require("./_data/webmentions.js")
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(webmentions)
+  eleventyConfig.addPlugin(UpgradeHelper)
+  eleventyConfig.addPlugin(eleventyWebc, {
+    components: "_includes/components/**/*.src"  })
   eleventyConfig.setBrowserSyncConfig({
     files: './_site/**/*.css'
   })
@@ -40,10 +47,14 @@ module.exports = function (eleventyConfig) {
 
   // WEBMENTIONS FILTER
   eleventyConfig.addFilter('webmentionsForUrl', (webmentions, url) => {
+    if (!webmentions || !Array.isArray(webmentions)) {
+      console.error('Invalid webmentions data:', webmentions);
+      return [];
+    }
     // define which types of webmentions should be included per URL.
     // possible values listed here:
     // https://github.com/aaronpk/webmention.io#find-links-of-a-specific-type-to-a-specific-page
-    const allowedTypes = ['mention-of', 'in-reply-to']
+    const allowedTypes = ['mention-of', 'in-reply-to', 'like-of', 'repost-of', 'bookmark-of']
 
     // define which HTML tags you want to allow in the webmention body content
     // https://github.com/apostrophecms/sanitize-html#what-are-the-default-options
@@ -92,8 +103,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection('tagList', require('./_11ty/getTagList'))
 
-  eleventyConfig.addPassthroughCopy('img')
-  eleventyConfig.addPassthroughCopy('css')
+  eleventyConfig.addPassthroughCopy('_src/img')
+  eleventyConfig.addPassthroughCopy('_src/css')
 
   /* Markdown Plugins */
   let markdownIt = require('markdown-it')
@@ -128,7 +139,7 @@ module.exports = function (eleventyConfig) {
     dataTemplateEngine: 'njk',
     passthroughFileCopy: true,
     dir: {
-      input: '.',
+      input: '_src',
       includes: '_includes',
       data: '_data',
       output: '_site'

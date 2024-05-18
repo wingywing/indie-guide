@@ -4,12 +4,12 @@
   "description": "A fork of eleventy-base-blog including webmention.io support",
   "scripts": {
     "watch": "npx eleventy --watch",
-    "watch:sass": "sass --watch _stylesheets:_site/css",
-    "build:sass": "sass stylesheets:_site/css",
+    "watch:sass": "sass --watch _src/stylesheets:_site/css",
+    "build:sass": "sass _src/stylesheets:_site/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:*",    
+    "build": "npm-run-all build:*",
     "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/maxboeck/eleventy-webmentions#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.7.1",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.0.3",
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.0",
     "dotenv": "^6.2.0",
@@ -41,6 +41,7 @@
     "sass": "^1.77.2"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-webc": "^0.11.2"
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "@11ty/eleventy-upgrade-help": "^2.0.5"
   }
 }
