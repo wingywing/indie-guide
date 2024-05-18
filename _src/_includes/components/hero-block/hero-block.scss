@@ -9,8 +9,27 @@ hero-block {
         margin: 4rem 0;
         height: min-content;
     }
+    &:not(&.home-page__hero-block){
+        .main-grid {
+            align-items: center;
+        }
+        .hero-block__heading {
+            grid-column: 2/10;
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+
     @include desktop {
         height: calc(60dvh - $header-desktop);
+        &:not(&.home-page__hero-block){
+            .hero-block__heading {
+                h1 {
+                    font-size: 5.2rem;
+                }
+            }
+        }
     }
     @include wide {
         height: calc(80dvh - $header-wide);

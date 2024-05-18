@@ -1,4 +1,4 @@
-<big-quote class="this.class">
+<big-quote :class="this.class">
     <slot class="big-quote__quote" name="quote"></slot>
     <slot class="big-quote__attribution" name="attribution"></slot>
 </big-quote>

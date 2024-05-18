@@ -45,6 +45,20 @@
     background-color: $lightest-grey;
 }
 
+@mixin page-base {
+    min-height: 100dvh;
+    section {
+        @include main-grid();
+        height: min-content;
+    }
+    section:not(.home-page-hero){
+        padding: 4rem 0;
+    }
+    section:last-of-type{
+        @include round-for-footer;
+    }
+}
+
 //Colour variables
 
 $orange: #FF5C00;

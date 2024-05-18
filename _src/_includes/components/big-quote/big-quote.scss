@@ -7,6 +7,13 @@ big-quote {
     flex-direction: column;
     padding-block: 4rem;
     text-wrap: balance;
+    &.full {
+        grid-column: 2/12;
+        align-items: center;
+        p {
+            text-align: center;
+        }
+    }
     p {
         padding: 0;
         margin: 0;

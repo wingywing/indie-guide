@@ -6,7 +6,7 @@ navtitle: Home
 <div id="home-page">
       {% renderTemplate "webc" %}
         <section class="home-page-hero">
-          <hero-block class="bg-white">
+          <hero-block class="bg-white home-page__hero-block">
             <object type="image/svg+xml" data="./assets/img/home-page-logo.svg" slot="heading">
             <h1>An indie guide to the IndieWeb</h1>
             <span>Build your home on the internet</span>
@@ -18,7 +18,7 @@ navtitle: Home
 
         <section class="home-page-quote">
           <half-half>
-            <big-quote slot="first">
+            <big-quote slot="first" class="home">
               <p slot="quote">
                 A <span class="text-orange">people-focused</span> alternative to the “corporate web”.
               </p>
@@ -40,7 +40,7 @@ navtitle: Home
               <link-button class="bg-white orange" href="/about">
                 <p slot="text">About this site</p>
               </link-button>
-              <link-button class="bg-white yellow" href="#">
+              <link-button class="bg-white yellow" href="/what-is-indieweb">
                 <p slot="text">What is IndieWeb?</p>
               </link-button>
               <link-button class="bg-white red" href="#">

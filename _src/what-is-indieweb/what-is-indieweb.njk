@@ -1,0 +1,72 @@
+---
+layout: layouts/home.njk
+navtitle: What is IndieWeb?
+---
+
+<link rel="stylesheet" href="{{ '/what-is-indieweb/what-is.css' | url }}" />
+
+
+<div class="what-is-page">
+    {% renderTemplate "webc" %}
+    <section class="home-page-hero">
+        <hero-block class="transparent">
+              <h1 slot="heading">What is the IndieWeb?</h1>
+         </hero-block>
+      </section>
+
+      <section class="home-page-quote">
+        <div class="main-grid">
+          <big-quote slot="first" class="full">
+            <p slot="quote">
+                “Decentralised media gives you a way to really connect with people with shared interests, and [...] the opportunity to think and choose what you want, where you want to be, and who you want to connect with.”
+            </p>
+            <span class="attribution text-center" slot="attribution">
+              <a href="https://kajoudesign.eu/ text-center">Kiara Jouhanneau</a>, a survey participant who’s a part of the IndieWeb
+            </span>
+          </big-quote>
+        </div>
+      </section>
+
+      <section class="home-page-links">
+        <div class="main-grid">
+        <div class="home-page__link-grid">
+          <div class="row-one">
+            <link-button class="bg-white orange" href="/about">
+              <p slot="text">About this site</p>
+            </link-button>
+            <link-button class="bg-white yellow" href="/what-is-indieweb">
+              <p slot="text">What is IndieWeb?</p>
+            </link-button>
+            <link-button class="bg-white red" href="#">
+              <p slot="text">Building blocks</p>
+            </link-button>
+          </div>
+          <div class="row-two">
+            <div class="left">
+              <join-button></join-button>
+            </div>
+            <div class="right">
+              <link-button class="bg-white yellow" href="#">
+                <p slot="text"><span class="underline">All</span> are welcome!</p>
+              </link-button>
+              <link-button class="bg-white red" href="#">
+                <p slot="text">Critique of current social media</p>
+              </link-button>
+              <link-button class="bg-white yellow" href="#">
+                <p slot="text">Bring back a <span class="underline">fun</span> interweb</p>
+              </link-button>
+            </div>
+          </div>
+          <div class="row-three">
+            <link-button class="bg-white orange" href="#">
+              <p slot="text">Research methodology and results</p>
+            </link-button>
+            <link-button class="bg-white red" href="#">
+              <p slot="text">Reference list</p>
+          </link-button>
+          </div>
+        </div>
+      </div>
+      </section>
+    {% endrenderTemplate %}
+</div>

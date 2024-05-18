@@ -1,0 +1,5 @@
+@import '../stylesheets/global/mixins';
+
+what-is-page {
+    @include page-base;
+}
