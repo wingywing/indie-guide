@@ -1,3 +1,41 @@
+@import '../../../stylesheets/global/mixins';
+
+
 site-footer {
-    background-color: red;
+    background-color: $light-grey;
+    width: 100%;
+    display: block;
+    .main-grid {
+        padding: 1em 0 2em 0;
+    }
+    .site-footer__wiki-link {
+        @include tablet {
+            font-size: 1rem;
+        }
+        grid-column: 2/11;
+        text-align: center;
+        width: fit-content;
+        height: max-content;
+        justify-self: center;
+    }
+    .site-footer__with-love {
+        grid-column: 2/11;
+        text-align: center;
+        justify-self: center;
+    }
+    @include tablet(){
+        .site-footer__wiki-link {
+            grid-column: 2/7;
+            justify-self: start;
+            align-self: start;
+            text-align: left;
+        }
+        .site-footer__with-love {
+            white-space: no-wrap;
+            grid-column: 7/12;
+            justify-self: end;
+            align-self: start;
+            text-align: right;
+        }
+    }
 }

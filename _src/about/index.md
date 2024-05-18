@@ -1,10 +1,6 @@
 ---
-layout: layouts/post.njk
-title: About Me
-tags:
-  - nav
-navtitle: About
-templateClass: tmpl-post
+layout: layouts/base.njk
+title: About this site
 ---
 
-I am a person that writes stuff.
+

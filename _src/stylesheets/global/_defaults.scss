@@ -1,0 +1,93 @@
+$base-font: 16px;
+
+//Defaults
+:root {
+    font-size: calc(1.2 * $base-font);
+    @include tablet {
+        font-size: calc(1.25 * $base-font);
+    }
+    @include desktop {
+        font-size: calc(1.5 * $base-font);
+    }
+    @include wide {
+        font-size: calc(1.875 * $base-font);   
+    }
+    color: $black;
+    font-family: 'red-hat';
+}
+body {
+    *:empty:not(:any-link):not(br):not(object):not(img):not(iframe) {
+        display: none;
+        visibility: hidden;
+    }
+    text-wrap: pretty;
+    transition: all, .3s;
+    background: $lightest-grey;
+    margin: 0;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    @include tablet(){
+    font-size: 6.8666666667rem;
+    }
+    font-family: 'neue-machina';
+    line-height: .9;
+    font-weight: normal;
+    transition: all .3s;
+    margin-block: 0;
+}
+h2 {
+    font-family: 'neue-machina';
+    font-size: 2.6666666667rem;
+}
+a {
+    color: $black;
+    text-decoration: underline $yellow;
+    text-underline-offset: .2rem;
+}
+.main-grid {
+    @include main-grid();
+    height: 100%;
+    width: 100%;
+}
+//colour helpers
+
+$colours: (
+    orange: #FF5C00,
+    red: #FF0000,
+    yellow: #FFB100,
+    black: #0F0F0F,
+    light-grey: #EAEAEA,
+    lightest-grey: #F7F7F7,
+    white: #FFFFFF
+);
+
+@mixin generate-bg-classes($colour-map){
+    @each $name, $colour in $colour-map {
+        .bg-#{"" + $name}{
+            background-color: #{$colour};
+        }
+    }
+    @each $name, $colour in $colour-map {
+        .text-#{"" + $name}{
+            color: #{$colour};
+        }
+    }
+}
+
+@include generate-bg-classes($colours);
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

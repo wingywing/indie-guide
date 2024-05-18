@@ -1,0 +1,9 @@
+@import './stylesheets/global/mixins';
+
+@mixin home-page-desktop(){
+    @include desktop{
+        .home-page-quote{
+            text-align: left;
+        }
+    }
+}

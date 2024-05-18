@@ -1,0 +1,44 @@
+@import './stylesheets/global/mixins';
+@import './stylesheets/global/defaults';
+@import './stylesheets/global/variables';
+
+@mixin home-page-mobile(){
+    hero-block {
+        display: grid;
+        grid-template-columns: subgrid;
+        grid-column: 1/13;
+        padding-top: $header-mobile;
+        margin-top: -$header-mobile;
+    }
+    .home-page-quote {
+        half-half {
+            grid-column: 2/12;
+        }
+        text-align: center;
+    }
+    .home-page-links {
+        .home-page__link-grid {
+            $mobile-gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            grid-column: 2/12;
+            gap: $mobile-gap;
+            link-button, join-button {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .row-one, .row-two, .row-three {
+                display: flex;
+                flex-direction: column;
+                gap: $mobile-gap;
+            }
+            .row-two {
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: $mobile-gap;
+                }
+            }
+        }
+    }
+}

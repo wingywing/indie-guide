@@ -1,3 +1,31 @@
+@import '../../../stylesheets/global/mixins';
+
 link-button {
-    background-color: red;
+    @include button-shadow();
+    &.orange {
+        @include button-shadow($orange);
+    }
+    &.yellow {
+        @include button-shadow($yellow);
+    }
+    &.red {
+        @include button-shadow($red);
+    }
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'neue-machina';
+    padding: 2.1333333333rem;
+    position: relative;
+    a {
+        left: 0;
+        top: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
 }

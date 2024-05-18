@@ -10,25 +10,18 @@
     <link rel="stylesheet" href="{{ '/css/webmentions.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="stylesheet" href="{{ '/stylesheets/global/global.css' | url }}">
+    <link rel="stylesheet" href="{{ 'index.css' | url }}">
+
     <link rel="pingback" href="https://webmention.io/{{ metadata.domain }}/xmlrpc">
     <link rel="webmention" href="https://webmention.io/{{ metadata.domain }}/webmention">
-    <a href="https://github.com/wingywing" rel="me">Wing on Github</a>
+    <a aria-hidden href="https://github.com/wingywing" rel="me" style="display: none; visibility: hidden;">Wing on Github</a>
   </head>
   <body>
     {% renderTemplate "webc" %}
       <site-header></site-header>
     {% endrenderTemplate %}
     <main>
-      <div class="main-grid">
-
-        {% renderTemplate "webc" %}
-        <link-button class="red" href="/">
-          <p slot="text"> Test </p>
-        </link-button>
-      {% endrenderTemplate %}
-
         {{ content | safe }}
-      </div>
     </main>
     {% renderTemplate "webc" %}
       <site-footer></site-footer>

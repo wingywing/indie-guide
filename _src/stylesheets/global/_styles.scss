@@ -2,10 +2,5 @@
 @import './fonts';
 //mixins: breakpoints, colour, grid
 @import './mixins';
-//default styles
-@import './defaults';
 //components: component styles
-@import '../../_includes/components/components';
-//variables
-@import './variables';
-
+@import '../../_includes/components/components'

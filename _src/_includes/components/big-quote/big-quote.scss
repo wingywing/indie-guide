@@ -1,3 +1,28 @@
-big-quote{
-    
+@import '../../../stylesheets/global/variables';
+@import '../../../stylesheets/global/mixins';
+
+big-quote {
+    display: flex;
+    gap: inherit;
+    flex-direction: column;
+    padding-block: 4rem;
+    text-wrap: balance;
+    p {
+        padding: 0;
+        margin: 0;
+        font-family: 'neue-machina';
+        font-style: italic;
+        font-size: 1.5rem;
+        max-width: 30ch;
+        @include tablet {
+            font-size: 2rem;
+        }
+    }
+    .attribution {
+        font-size: 1.0666666667rem;
+        color: $orange;
+        a {
+            color: $orange;
+        }
+    }
 }

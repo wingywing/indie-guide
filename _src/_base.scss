@@ -1,0 +1,55 @@
+@import './stylesheets/global/mixins';
+
+@mixin home-page-base(){
+    min-height: 100dvh;
+    section {
+        @include main-grid();
+        height: min-content;
+    }
+    section:not(.home-page-hero){
+        padding: 4rem 0;
+    }
+    section:last-of-type{
+        &::before {
+            position: absolute;
+            content: '';
+            height: 100%;
+            width: 100%;
+            background-color: $light-grey;
+            z-index: -1;
+        }
+        position: relative;
+        display: flex;
+        border-collapse: separate; 
+        @include bottom-rounded;
+        background-color: $lightest-grey;
+    }
+
+    .home-page-hero{
+        @include bottom-rounded;
+        background-color: $white;
+        display: block;
+        grid-column: 1/13;
+        width: 100dvw;
+        max-width: unset;
+        .hero-block__heading {
+            grid-column: 2/12;
+            grid-row: 1;
+            z-index: 1;
+        }
+        object {
+            max-width: 100%;
+            grid-column: 2/12;
+        }
+        .main-grid > object {
+            width: 20%;
+            grid-row: 1;
+            justify-self: flex-end;
+            margin-bottom: -5vw;
+        }
+    }
+
+    .home-page-links {
+        max-width: unset;
+    }
+}

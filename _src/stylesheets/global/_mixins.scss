@@ -1,0 +1,59 @@
+//Screen breakpoint mixins
+@mixin wide {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin button-shadow($shadow: $orange) {
+    &:hover {
+        filter: brightness(1.1) saturate(1.1);
+        box-shadow: 0 0 0 $shadow;
+        transform: translate(.5rem, .5rem);        
+    }
+    box-shadow: .5rem .5rem 0 $shadow;
+    transition: all .3s;
+}
+
+@mixin bottom-rounded {
+    border-radius: 0 0 3em 3em;
+}
+
+//Colour variables
+
+$orange: #FF5C00;
+$red: #FF0000;
+$yellow: #FFB100;
+$black: #0F0F0F;
+$light-grey: #EAEAEA;
+$lightest-grey: #F7F7F7;
+$white: #FFFFFF;
+
+//Grid mixin
+@mixin main-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 10px;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    @include tablet {
+        gap: 20px;
+    }
+    @include desktop {
+        gap: 32px;
+    }
+    @include wide {
+        gap: 40px;
+    }
+}
