@@ -1,0 +1,3 @@
+<paragraph-block class="this.class">
+    <slot class="paragraph-block__paragraph" name="paragraph"></slot>
+</paragraph-block>

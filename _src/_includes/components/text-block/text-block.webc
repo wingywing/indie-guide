@@ -1,0 +1,3 @@
+<text-block class="this.class">
+    <slot class=""text-block__text name="text"></slot>
+</text-block>

@@ -1,4 +1,5 @@
 <join-button>
-    <p>See how <b>YOU</b> can join in</p>
-    <span>Click here!</span>
+    <a class="join-button__link" :href="href"></a>
+    <p class="join-button__tagline">See how <b>YOU</b> can join in</p>
+    <span class="join-button__click-here">Click here!</span>
 </join-button>

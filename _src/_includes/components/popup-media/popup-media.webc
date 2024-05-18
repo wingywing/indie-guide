@@ -1,0 +1,9 @@
+<popup-media>
+    <a class="popup-media__link" :href="href">
+    </a>
+    <div class="popup-media__topbar">
+        <slot class="popup-media__attribution" name="attribution"></slot>
+        <div class="popup-media__topbar-icons"></div>
+    </div>
+    <slot class="popup-media__media" name="media"></slot>
+</popup-media>
