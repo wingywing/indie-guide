@@ -4,6 +4,9 @@ const pluginRss = require('@11ty/eleventy-plugin-rss')
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setBrowserSyncConfig({
+    files: './_site/**/*.css'
+  })
   eleventyConfig.addPlugin(pluginRss)
   eleventyConfig.addPlugin(pluginSyntaxHighlight)
   eleventyConfig.setDataDeepMerge(true)
