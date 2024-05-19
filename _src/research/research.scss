@@ -1,6 +1,6 @@
 @import '../stylesheets/global/mixins';
 
-#critique-page {
+#research-page {
     @include page-base;
     section {
         display: flex;
@@ -29,13 +29,33 @@
         grid-column: 2/12;
         text-align: center;
     }
-
     half-half {
         gap: 4rem;
         p:not(:last-of-type) {
             margin-bottom: 1.5rem;
         }
     }
+    .research-survey-design {
+        display: flex;
+        h2, .first, link-button {
+            grid-column: 2/12;
+        }
+    }
+    .research-paragraph-section, .research-conclusion-section {
+        paragraph-block {
+            justify-self: center;
+            grid-column: 2/12;
+            p:not(:last-of-type) {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .on-social-media {
+        half-half {
+            gap: 1rem;
+        }
+    }
+
     @include tablet {
         .title-block {
             h2 {
@@ -46,8 +66,43 @@
             align-items: end;
             gap: 2rem;
         }
+        .research-survey-design {
+            h2 {
+                justify-self: center;
+            }
+            .first {
+                grid-column: 2/7;
+            } 
+            link-button {
+                grid-column: 8/12;
+                align-self: center;
+            }
+        }
+        .on-social-media {
+            half-half {
+                gap: 2rem;
+                .first {
+                    max-width: 32ch;
+                }
+            }
+            big-quote {
+                gap: 1rem;
+            }
+            
+        }
     }
     @include desktop {
         min-height: calc(60dvh - 3.0333333333rem);
+        
+    }
+    @include wide {
+        .first {
+            h2 {
+                white-space: nowrap;
+            }
+        }
+        big-quote {
+            margin-top: 3rem;
+        }
     }
 }
