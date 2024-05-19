@@ -27,7 +27,10 @@ They're defined in the component via `name="namehere"` and can be used outside o
 Sometimes, you can get errors, but I figured out that it doesn't like it when you don't specify a class sometimes.
 
 ## To-do
-[]Add webmentions
-[]Add the fun shapes in the background
-[]Consolidate any strange spacing
-[]Add animations
+[] Add webmentions
+
+[] Add the fun shapes in the background
+
+[] Consolidate any strange spacing
+
+[] Add animations
