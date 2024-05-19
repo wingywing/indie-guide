@@ -1,36 +1,33 @@
-# eleventy-webmentions
+# An Indie Guide to The IndieWeb
+A simple guide to the IndieWeb by WIng Pang! Please let me know how I can improve this and feel free to add upon it as well.
 
-A basic starter template for [Eleventy](https://www.11ty.io) blogs with added support for [webmentions](https://indieweb.org/Webmention).  
-For more information about this, read [Static Indieweb: Using Webmentions](https://mxb.at/blog/using-webmentions-on-static-sites/).
+This project was created based off [Max Boeck's eleventy-webmentions starter project](https://github.com/maxboeck/eleventy-webmentions).
 
-![Example of Webmention Section](https://mxb.at/assets/media/static-indieweb-webmentions/starter-template.png)
+It's been updated to the latest version of Eleventy and has support for:
+- .webc web components (I used this quite a lot!)
+- SASS/SCSS
 
 ## Installation
 
-Run `npm install` after cloning this repository. The available commands are identical to [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
+Installation: `npm i`
+Dev: `npm run start`
 
-## Enable Webmentions
+## .webc Structure
 
-Follow these steps to get it working:
+I created reusable components for the whole project.
 
-1. Go to [https://webmention.io/](https://webmention.io/) and sign in. To authenticate, you will have to include a `<a rel="me">` link at your domain, pointing to your github or twitter user URL:  
+Each component has its own .scss stylesheet tied to it + is imported into components.scss.
 
-```<a href="https://github.com/maxboeck" rel="me">Max on Github</a>```
+I didn't use scoped .css since I wanted to use the features .scss has (like importing partials and mixins).
 
-2. Once you've verified domain ownership, go to the [settings page](https://webmention.io/settings). Copy the token listed under "API Key" there.
+.scss components have `slot`s that you can insert elements into.
 
-3. Paste the token into the `.env.sample` file, then delete the `.sample` from the filename. That's a secret key, so this file should be in your `.gitignore`. If you are hosting your site on Netlify, make sure to [enter the token in your build settings](https://docs.netlify.com/configure-builds/environment-variables/#declare-variables).
+They're defined in the component via `name="namehere"` and can be used outside of it by using `slot="namehere"`.
 
-4. Check the information in `_data/metadata.json` and make sure your domain name is correct.  It should look like `example.com`.
+Sometimes, you can get errors, but I figured out that it doesn't like it when you don't specify a class sometimes.
 
-4. Run Eleventy. It will try to fetch the webmentions for your domain (you may not yet have any, check your webmentions.io [dashboard](https://webmention.io/dashboard)). After the first use, a cached json file will be created so you don't have to re-fetch that data everytime eleventy regenerates the site in development.
-
-## Customization
-
-This starter includes just the basic functionality, feel free to make it your own.  
-The relevant parts are: 
-
-* Templates: `_includes/webmentionlist.njk` and `_includes/webmention.njk`
-* Filter: `webmentionsForUrl` in `.eleventy.js`
-* Data Fetching: `_data/webmentions.js`
-* Basic Styling: `css/webmentions.css`
+## To-do
+[]Add webmentions
+[]Add the fun shapes in the background
+[]Consolidate any strange spacing
+[]Add animations
