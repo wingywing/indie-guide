@@ -18,10 +18,7 @@ $base-font: 16px;
     font-synthesis: none !important;
 }
 body {
-    *:empty:not(:any-link):not(br):not(object):not(img):not(iframe):not(.empty) {
-        display: none;
-        visibility: hidden;
-    }
+
     text-wrap: pretty;
     transition: all, .3s;
     background: $lightest-grey;

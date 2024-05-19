@@ -40,7 +40,7 @@
         <text transform="translate(109 719)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0" letter-spacing="-.08em">F</tspan><tspan x="15.48" y="0" letter-spacing="0em">edi</tspan><tspan x="55.11" y="0" letter-spacing="-.02em">v</tspan><tspan x="68.97" y="0" letter-spacing="0em">e</tspan><tspan x="85.41" y="0" letter-spacing="-.01em">r</tspan><tspan x="94.95" y="0" letter-spacing="0em">se and Blu</tspan><tspan x="228.99" y="0" letter-spacing="0em">e</tspan><tspan x="245.58" y="0">s</tspan><tspan x="258.65" y="0" letter-spacing="0em">k</tspan><tspan x="272.12" y="0">y </tspan></text>
       </g>
       <g isolation="isolate">
-        <a href="https://pixelfed.org/">
+        <a href="https://pixelfed.org/" target="_blank">
           <g isolation="isolate">
             <path d="M98.4,872.13c-.9,0-1.67-.32-2.31-.96-.64-.64-.96-1.42-.96-2.34s.32-1.75.96-2.38,1.4-.95,2.28-.95,1.67.32,2.29.95.94,1.43.94,2.42c0,.92-.31,1.69-.94,2.32-.63.63-1.39.95-2.27.95Z" fill="#0f0f0f" stroke-width="0"/>
             <path d="M113.52,879v-21h9.39c1.44,0,2.68.28,3.72.84,1.04.56,1.85,1.33,2.43,2.29.58.97.87,2.11.87,3.41s-.29,2.35-.87,3.33c-.58.98-1.39,1.75-2.43,2.29s-2.28.83-3.72.83h-5.79v8.01h-3.6ZM117.12,868.05h5.22c1.28,0,2.26-.32,2.94-.96.68-.64,1.02-1.5,1.02-2.58s-.34-1.88-1.02-2.52c-.68-.64-1.65-.96-2.91-.96h-5.25v7.02Z" fill="#0f0f0f" stroke-width="0"/>
@@ -56,7 +56,7 @@
         </a>
       </g>
       <g isolation="isolate">
-        <a href="https://www.minds.com/">
+        <a href="https://www.minds.com/" target="_blank">
           <g isolation="isolate">
             <path d="M98.4,832.13c-.9,0-1.67-.32-2.31-.96-.64-.64-.96-1.42-.96-2.34s.32-1.75.96-2.38,1.4-.95,2.28-.95,1.67.32,2.29.95.94,1.43.94,2.42c0,.92-.31,1.69-.94,2.32-.63.63-1.39.95-2.27.95Z" fill="#0f0f0f" stroke-width="0"/>
             <path d="M113.52,839v-21h4.68l6.15,12.75,6.12-12.75h4.68v21h-3.39v-16.44l-7.44,14.94-7.47-15.03v16.53h-3.33Z" fill="#0f0f0f" stroke-width="0"/>
@@ -68,17 +68,17 @@
           </g>
         </a>
       </g>
-      <a href="https://mastodon.social/explore">
+      <a href="https://mastodon.social/explore" target="_blank">
         <g isolation="isolate">
           <text transform="translate(109 759)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0" letter-spacing="0em">M</tspan><tspan x="26.37" y="0">a</tspan><tspan x="42.87" y="0" letter-spacing="0em">s</tspan><tspan x="56.94" y="0" letter-spacing="0em">t</tspan><tspan x="69.12" y="0">odon</tspan></text>
         </g>
       </a>
       <g isolation="isolate">
-        <a href="https://bsky.app/">
+        <a href="https://bsky.app/" target="_blank">
           <text transform="translate(293.48 759)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">Blu</tspan><tspan x="45.9" y="0" letter-spacing="0em">e</tspan><tspan x="63.24" y="0">s</tspan><tspan x="77.61" y="0" letter-spacing="0em">k</tspan><tspan x="93.99" y="0">y</tspan></text>
         </a>
       </g>
-      <a href="https://micro.blog">
+      <a href="https://micro.blog" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
             <path d="M98.4,672.13c-.9,0-1.67-.32-2.31-.96-.64-.64-.96-1.42-.96-2.34s.32-1.75.96-2.38,1.4-.95,2.28-.95,1.67.32,2.29.95.94,1.43.94,2.42c0,.92-.31,1.69-.94,2.32-.63.63-1.39.95-2.27.95Z" fill="#0f0f0f" stroke-width="0"/>
@@ -96,7 +96,7 @@
           </g>
         </g>
       </a>
-      <a href="https://www.youtube.com/watch?v=HfU20EtgpC8">
+      <a href="https://www.youtube.com/watch?v=HfU20EtgpC8" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
             <text transform="translate(207.32 599)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">d</tspan><tspan x="18.3" y="0" letter-spacing="0em">e</tspan><tspan x="35.55" y="0" letter-spacing="-.01em">c</tspan><tspan x="50.79" y="0">e</tspan><tspan x="67.98" y="0" letter-spacing="-.02em">n</tspan><tspan x="84.99" y="0">t</tspan><tspan x="97.41" y="0" letter-spacing="-.01em">r</tspan><tspan x="108.75" y="0" letter-spacing="0em">ali</tspan><tspan x="140.37" y="0" letter-spacing="0em">s</tspan><tspan x="154.89" y="0" letter-spacing="0em">e</tspan><tspan x="172.14" y="0">d </tspan><tspan x="197.19" y="0" letter-spacing="0em">s</tspan><tspan x="211.71" y="0" xml:space="preserve">ocial </tspan></text>
@@ -105,7 +105,7 @@
         </g>
       </a>
       <rect y="1584" width="450" height="349" fill="#ffb100" stroke-width="0"/>
-      <a href="https://indieweb.org/Tutorial_Set_up_an_Indie_Website_using_Blogger">
+      <a href="https://indieweb.org/Tutorial_Set_up_an_Indie_Website_using_Blogger" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
             <path d="M89.77,1782.13c-.9,0-1.67-.32-2.31-.96-.64-.64-.96-1.42-.96-2.34s.32-1.75.96-2.38,1.4-.95,2.28-.95,1.67.32,2.29.95.94,1.43.94,2.42c0,.92-.31,1.69-.94,2.32-.63.63-1.39.95-2.27.95Z" fill="#0f0f0f" stroke-width="0"/>
@@ -121,7 +121,7 @@
         </g>
       </a>
       <g isolation="isolate">
-        <a href="https://indieweb.org/Tutorial_Set_up_an_Indie_Website_Using_WordPress_Com">
+        <a href="https://indieweb.org/Tutorial_Set_up_an_Indie_Website_Using_WordPress_Com" target="_blank">
           <g isolation="isolate">
             <path d="M89.77,1742.13c-.9,0-1.67-.32-2.31-.96-.64-.64-.96-1.42-.96-2.34s.32-1.75.96-2.38,1.4-.95,2.28-.95,1.67.32,2.29.95.94,1.43.94,2.42c0,.92-.31,1.69-.94,2.32-.63.63-1.39.95-2.27.95Z" fill="#0f0f0f" stroke-width="0"/>
             <path d="M108.04,1749l-4.59-21h3.72l3.09,15.39,4.5-15.39h3.42l4.5,15.36,3.12-15.36h3.54l-4.59,21h-3.75l-4.56-15.87-4.62,15.87h-3.78Z" fill="#0f0f0f" stroke-width="0"/>
@@ -137,7 +137,7 @@
           </g>
         </a>
       </g>
-      <a href="https://www.drupal.org/project/indieweb">
+      <a href="https://www.drupal.org/project/indieweb" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
             <path d="M89.77,1822.13c-.9,0-1.67-.32-2.31-.96-.64-.64-.96-1.42-.96-2.34s.32-1.75.96-2.38,1.4-.95,2.28-.95,1.67.32,2.29.95.94,1.43.94,2.42c0,.92-.31,1.69-.94,2.32-.63.63-1.39.95-2.27.95Z" fill="#0f0f0f" stroke-width="0"/>
@@ -151,7 +151,7 @@
           </g>
         </g>
       </a>
-      <a href="https://docs.withknown.com/en/latest/plugins/community/">
+      <a href="https://docs.withknown.com/en/latest/plugins/community/" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
             <path d="M89.77,1862.13c-.9,0-1.67-.32-2.31-.96-.64-.64-.96-1.42-.96-2.34s.32-1.75.96-2.38,1.4-.95,2.28-.95,1.67.32,2.29.95.94,1.43.94,2.42c0,.92-.31,1.69-.94,2.32-.63.63-1.39.95-2.27.95Z" fill="#0f0f0f" stroke-width="0"/>
@@ -178,7 +178,7 @@
         <text transform="translate(811.46 1869)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">). </tspan></text>
       </g>
       <g isolation="isolate">
-        <a href="https://indieweb.org/Tutorial_Set_up_an_Indie_Website_using_Blogger">
+        <a href="https://indieweb.org/Tutorial_Set_up_an_Indie_Website_using_Blogger" target="_blank">
           <text transform="translate(554 1709)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">this guide </tspan><tspan x="144.09" y="0" letter-spacing="-.02em">f</tspan><tspan x="155.82" y="0" letter-spacing="0em">or Blogger</tspan></text>
         </a>
       </g>
@@ -191,7 +191,7 @@
         <text transform="translate(565.66 1789)" fill="#0f0f0f" font-family="RedHatText-LightItalic, &apos;Red Hat Text&apos;" font-size="30" font-style="italic" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">ma</tspan><tspan x="39.39" y="0" letter-spacing="-.03em">k</tspan><tspan x="52.02" y="0" letter-spacing="0em">e su</tspan><tspan x="103.77" y="0" letter-spacing="-.01em">r</tspan><tspan x="112.92" y="0">e </tspan><tspan x="136.14" y="0" letter-spacing="0em">y</tspan><tspan x="149.85" y="0">ou </tspan></text>
         <text transform="translate(662.97 1869)" fill="#0f0f0f" font-family="RedHatText-LightItalic, &apos;Red Hat Text&apos;" font-size="30" font-style="italic" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0"> </tspan><tspan x="7.14" y="0" letter-spacing="-.02em">f</tspan><tspan x="16.86" y="0">or</tspan><tspan x="43.26" y="0" letter-spacing="-.02em"> </tspan><tspan x="49.8" y="0" letter-spacing="-.05em">T</tspan><tspan x="66.21" y="0">umblr!</tspan></text>
       </g>
-      <a href="https://help.tumblr.com/privacy-options/#h_01HQP3KFE5TB8MQE0JRW29W86T">
+      <a href="https://help.tumblr.com/privacy-options/#h_01HQP3KFE5TB8MQE0JRW29W86T" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
             <text transform="translate(759.49 1789)" fill="#0f0f0f" font-family="RedHatTextItalic-Regular, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 400" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">di</tspan><tspan x="23.73" y="0" letter-spacing="0em">s</tspan><tspan x="37.17" y="0" xml:space="preserve" letter-spacing="0em">able </tspan></text>
@@ -207,7 +207,7 @@
         <text transform="translate(504.45 1061)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">, </tspan></text>
         <text transform="translate(64 1101)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">which s</tspan><tspan x="93.81" y="0" letter-spacing="-.01em">e</tspan><tspan x="109.8" y="0" letter-spacing="0em">t</tspan><tspan x="120.66" y="0">s </tspan><tspan x="140.88" y="0" letter-spacing="-.02em">ev</tspan><tspan x="170.73" y="0" letter-spacing="0em">e</tspan><tspan x="187.17" y="0" letter-spacing="0em">r</tspan><tspan x="197.31" y="0" letter-spacing=".02em">y</tspan><tspan x="212" y="0">thing up </tspan><tspan x="325.16" y="0" letter-spacing="-.02em">f</tspan><tspan x="334.79" y="0">or </tspan><tspan x="368.93" y="0" letter-spacing="-.02em">y</tspan><tspan x="382.73" y="0" letter-spacing="0em">ou</tspan></text>
       </g>
-      <a href="https://micro.blog">
+      <a href="https://micro.blog" target="_blank">
         <g isolation="isolate">
           <text transform="translate(207.32 1061)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">mic</tspan><tspan x="49.53" y="0" letter-spacing="-.02em">r</tspan><tspan x="60.63" y="0" letter-spacing="-.02em">o</tspan><tspan x="77.94" y="0">.blog</tspan></text>
         </g>
@@ -215,7 +215,7 @@
       <g isolation="isolate">
         <text transform="translate(200.88 1061)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate" text-decoration="underline"><tspan x="0" y="0"> </tspan></text>
       </g>
-      <a href="https://omg.lol">
+      <a href="https://omg.lol" target="_blank">
         <g isolation="isolate">
           <text transform="translate(399.36 1061)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">omg.lol</tspan></text>
         </g>
@@ -227,12 +227,12 @@
         <text transform="translate(1044 2120)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">on </tspan></text>
         <text transform="translate(1300.46 2120)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">!</tspan></text>
       </g>
-      <a href="https://indiewebify.me/">
+      <a href="https://indiewebify.me/" target="_blank">
         <g isolation="isolate">
           <text transform="translate(1084.66 2120)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">indi</tspan><tspan x="50.88" y="0" letter-spacing="0em">ew</tspan><tspan x="89.58" y="0">ebi</tspan><tspan x="132.66" y="0" letter-spacing="0em">f</tspan><tspan x="145.2" y="0" letter-spacing="-.07em">y</tspan><tspan x="159.3" y="0">.me</tspan></text>
         </g>
       </a>
-      <a href="https://indieweb.org/Getting_Started">
+      <a href="https://indieweb.org/Getting_Started" target="_blank">
         <g isolation="isolate">
           <text transform="translate(1044 2080)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">Indi</tspan><tspan x="51.66" y="0" letter-spacing="-.03em">e</tspan><tspan x="68.1" y="0" letter-spacing="-.04em">W</tspan><tspan x="94.98" y="0">eb wiki</tspan></text>
         </g>
@@ -249,11 +249,11 @@
         <text transform="translate(1183.01 1790)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">.</tspan></text>
       </g>
       <g isolation="isolate">
-        <a href="https://www.neocities.org">
+        <a href="https://www.neocities.org" target="_blank">
           <text transform="translate(1191.63 1710)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">N</tspan><tspan x="22.83" y="0" letter-spacing="0em">e</tspan><tspan x="40.08" y="0">ociti</tspan><tspan x="101.22" y="0" letter-spacing="0em">e</tspan><tspan x="118.56" y="0">s</tspan></text>
         </a>
       </g>
-      <a href="https://melonking.net/melon?z=/thoughts/lets-make">
+      <a href="https://melonking.net/melon?z=/thoughts/lets-make" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
             <text transform="translate(1274.39 1750)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">l</tspan><tspan x="7.56" y="0" letter-spacing="-.02em">ov</tspan><tspan x="40.83" y="0" xml:space="preserve">e </tspan></text>
