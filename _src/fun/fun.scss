@@ -1,0 +1,110 @@
+@import '../stylesheets/global/mixins';
+@import '../stylesheets/global/variables';
+
+
+#fun-page {
+    @include page-base;
+    margin-top: -$header-desktop;
+
+    section {
+        display: flex;
+    }
+    > section:last-of-type {
+        &::before {
+            background: none;
+        }
+    }
+    .fun-page-hero{
+        @include bottom-rounded;
+        background-color: $orange;
+        position: relative;
+        max-width: unset;
+        justify-content: center;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    hero-block {
+        object {
+            position: absolute;
+            grid-column: 1/13;
+            grid-row: 1;
+            z-index: -1;
+            max-height: 60rem;
+            margin-left: -18rem;
+        }
+        .hero-block__heading {
+            grid-row: 1;
+        }
+        div {
+            z-index: 1;
+        }
+    }
+
+    paragraph-block {
+        p:not(:last-of-type) {
+            margin-bottom: 2rem;
+            text-wrap: balance;
+        }
+        grid-column: 2/12;
+        justify-self: center;
+    }
+
+    .popup-and-text {
+        &:nth-of-type(odd){
+            rotate: -1.5deg;
+        }
+        &:nth-of-type(even){
+            rotate: 1.5deg;
+        }
+        grid-column: 2/12;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6rem;
+        text-wrap: balance;
+        text-align: center;
+
+    }
+
+    @include tablet {
+        .title-block {
+            h2 {
+                margin-bottom: -.8rem;
+            }
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+            gap: 2rem;
+        }
+        .fun-page-hero {
+            object {
+                margin-left: -30rem;
+                max-width: unset;
+                max-height: unset;
+            }
+        }
+        .popup-and-text {
+            flex-direction: row;
+            gap: 2rem;
+            &:nth-of-type(odd){
+                rotate: -1.5deg;
+                text-align: left;
+            }
+            &:nth-of-type(even){
+                rotate: 1.5deg;
+                text-align: right;
+                flex-direction: row-reverse;
+            }
+            popup-media {
+                flex-shrink: 0;
+            }
+            .text {
+                max-width: 40ch;
+            }
+    }
+    @include desktop {
+        min-height: calc(60dvh - 3.0333333333rem);
+    }
+}
+}

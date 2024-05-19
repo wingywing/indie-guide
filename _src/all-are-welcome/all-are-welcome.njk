@@ -1,0 +1,41 @@
+---
+layout: layouts/home.njk
+navtitle: All are welcome to the IndieWeb!
+---
+
+<link rel="stylesheet" href="{{ '/all-are-welcome/all-are-welcome.css' | url }}" />
+
+<div id="all-are-welcome-page">
+  {% renderTemplate "webc" %}
+  <section class="all-are-welcome-page-hero">
+    <hero-block class="transparent">
+      <h1 slot="heading"><span class="underline">All</span> are welcome!</h1>
+      <object slot="bg-image" type="image/svg+xml" data="../assets/img/welcome-hero.svg"></object>
+    </hero-block>
+  </section>
+  <section class="all-are-welcome-quote">
+    <div class="main-grid">
+      <big-quote slot="first" class="full">
+        <p slot="quote">
+          “The #IndieWeb is for everyone, everyone who wants to be a part of the world-wide-web of interconnected people.”
+        </p>
+        <span class="attribution text-center" slot="attribution">
+          (<a href="https://tantek.com/2024/026/t3/indieweb-for-everyone-internet-of-people">Tantek Çelik</a>, 2024) Founder of IndieWeb
+        </span>
+      </big-quote>
+    </div>
+  </section>
+  <section class="all-are-welcome-paragraph-section">
+    <div class="main-grid">
+        <paragraph-block class="bg-white">
+          <div slot="paragraph" class="text-center">
+            <p>No matter what you’re interested in, or who you are, we are interconnected.</p>
+            <p><a href="https://tantek.com/2024/026/t3/indieweb-for-everyone-internet-of-people">Tantek Çelik</a> (2024), the founder of IndieWeb and Web Standards Lead at Mozilla, envisions the future internet as a place that is <b>diverse and inclusive of all kinds of people</b>—an interconnected web of independent <b>“humans that want to interconnect, to communicate, to value and respect each other”.</b></p>
+          </div>
+        </paragraph-block>
+      </half-half>
+    </div>
+  </section>
+  <join-section></join-section>
+  {% endrenderTemplate %}
+</div>

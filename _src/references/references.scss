@@ -1,0 +1,30 @@
+@import '../stylesheets/global/mixins';
+@import '../stylesheets/global/variables';
+
+#references-page {
+    @include page-base;
+    .main-grid {
+        margin-bottom: 4rem;
+    }
+    .reference-list {
+        margin-top: -10rem;
+        padding: 2rem;
+        grid-column: 1/13;
+    }
+    ul {
+        list-style: none;
+        padding-left: 2rem;
+        text-indent: -2rem;
+    }
+    li:not(:last-of-type) {
+        margin-bottom: 1rem;
+        line-height: 100%;
+    }
+    @include tablet {
+        .reference-list {
+            grid-column:  2/12;
+            margin-top: -5rem;
+        }
+    }
+
+}

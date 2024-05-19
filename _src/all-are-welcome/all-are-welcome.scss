@@ -1,0 +1,58 @@
+@import '../stylesheets/global/mixins';
+
+#all-are-welcome-page {
+    @include page-base;
+    section {
+        display: flex;
+    }
+    > section:last-of-type {
+        &::before {
+            background: none;
+        }
+    }
+    h1 > .underline {
+        text-decoration: underline .3rem;
+    }
+
+    hero-block {
+        object {
+            position: absolute;
+            right: -6rem;
+            z-index: -1;
+            bottom: -5rem;
+            max-width: 100rem;
+        }
+    }
+
+    paragraph-block {
+        p:not(:last-of-type) {
+            margin-bottom: 2rem;
+            text-wrap: balance;
+        }
+        grid-column: 2/12;
+        justify-self: center;
+    }
+
+    @include tablet {
+        .title-block {
+            h2 {
+                margin-bottom: -.8rem;
+            }
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            gap: 2rem;
+        }
+        hero-block object {
+            bottom: -5rem;
+            right: 5rem;
+        }
+    }
+    @include desktop {
+        min-height: calc(60dvh - 3.0333333333rem);
+        hero-block object {
+            bottom: -5rem;
+            right: -10rem;
+        }
+    }
+}

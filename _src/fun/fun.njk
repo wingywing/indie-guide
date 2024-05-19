@@ -1,0 +1,78 @@
+---
+layout: layouts/home.njk
+navtitle: Bring back a fun interweb
+---
+
+<link rel="stylesheet" href="{{ '/fun/fun.css' | url }}" />
+
+<div id="fun-page">
+  {% renderTemplate "webc" %}
+  <section class="fun-page-hero">
+    <hero-block class="transparent">
+      <h1 slot="heading">Bring back a fun interweb</h1>
+      <object slot="bg-image" type="image/svg+xml" data="../assets/img/fun-hero.svg"></object>
+    </hero-block>
+  </section>
+  <section class="fun-quote">
+    <div class="main-grid">
+      <big-quote slot="first" class="full">
+        <p slot="quote">
+          “...my news feeds and social media channels [became] more bland and familiar [...], the internet no longer feels exotic, but oddly mundane.”         </p>
+        <span class="attribution " slot="attribution">
+          (<a href="https://thedisconnect.co/one/escape-the-next-digital-divide/">Alex Beattie</a>, 2018)
+        </span>
+      </big-quote>
+    </div>
+  </section>
+  <section class="fun-paragraph-section">
+    <div class="main-grid">
+        <paragraph-block class="bg-white">
+          <div slot="paragraph" class="">
+            <p>So many websites right now feel so similar. But it wasn’t always that way, and doesn’t have to be that way.</p>
+
+            <p>These days, most people don’t find browsing, or making websites a fun or exciting activity. In my <a href="/research">survey conducted with 97 people</a>, 28 did not have their own websites.</p>
+            
+            <p>The top two reasons for not having a website was: not having the time to make one (44.8%) and not seeing the point for one (37.9%).</p>
+            
+            <p>What if we shifted our perspective on what a website should be? <b>A website can be anything you want it to be, not just a place to monetise your personal brand.</b></p>
+          </div>
+        </paragraph-block>
+      </half-half>
+    </div>
+  </section>
+  <section class="fun-image-section">
+    <div class="main-grid">
+    <div class="popup-and-text">
+      <popup-media href="https://jamesg.blog/explore/">
+        <p slot="attribution">(<span class="underline">capjamesg</span>, 2024)</p>
+        <img src="../../assets/img/fun-james.png" alt="Screenshot of capjamesg's about page, showing a photo of his workspace with interactive links" slot="media">
+      </popup-media>
+      <p class="text"><a href="https://jamesg.blog/explore/">capjamesg</a> (2024)’s website shows his personality through his interests (especially in coffee!). This page has a photo where you can click on objects to be taken to other pages on his site.</p>
+
+    </div>
+    <div class="popup-and-text">
+      <popup-media href="https://wingpang.com">
+        <p slot="attribution">(<span class="underline">Pang</span>, 2024)</p>
+        <img src="../../assets/img/fun-wing.png" alt="Screenshot of Wing Pang's home page, showing off her interest in language and culture with animated text saying 'hello' in English, Cantonese, Mandarin and Japanese. There is also a photo of her in Japanese kimino garment." slot="media">
+      </popup-media>
+      <p class="text">This is my website! I wanted it to show my personality while being a home to my works and writing.</p>
+    </div>
+    <div class="popup-and-text">
+      <popup-media href="https://sarajoy.dev/#find">
+        <p slot="attribution">(<span class="underline">Joy</span>, 2024)</p>
+        <img src="../../assets/img/fun-joy.png" alt="Screenshot of Sarah Joy's home page, a beautiful pattern with heards and fluid shapes. There is also a cartoon character of herself along with a description of herself." slot="media">
+      </popup-media>
+      <p class="text"><a href="https://sarajoy.dev/#find">Sarah Joy</a>'s (2024) website is creative and fun to scroll through, embodying who she is.</p>
+    </div>
+    <div class="popup-and-text no-text">
+      <popup-media>
+        <p slot="attribution">???</p>
+        <object slot="media" type="image/svg+xml" data="../../assets/img/fun-popup-image.svg"></object>
+        <div class="empty"></div>
+      </popup-media>
+    </div>
+  </div>
+  </section>
+  <join-section></join-section>
+  {% endrenderTemplate %}
+</div>

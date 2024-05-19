@@ -1,0 +1,120 @@
+---
+layout: layouts/home.njk
+navtitle: What is IndieWeb?
+---
+
+<link rel="stylesheet" href="{{ '/critique/critique.css' | url }}" />
+
+
+<div id="critique-page">
+    {% renderTemplate "webc" %}
+    <section class="critique-page-hero">
+        <hero-block class="transparent">
+              <h1 slot="heading">Critique of current social media</h1>
+              <object slot="bg-image" type="image/svg+xml" data="../assets/img/critique-hero.svg"></object>
+
+         </hero-block>
+      </section>
+
+      <section class="critique-page-quote">
+        <div class="main-grid">
+          <big-quote slot="first" class="full">
+            <p slot="quote">
+                “Facebook is full of people I love, but is ever more full of horrendous distraction and advertising.”
+            </p>
+            <span class="attribution text-center" slot="attribution">
+                A <a href="/research">survey</a> participant aged 31–40 who’s a part of the IndieWeb
+            </span>
+          </big-quote>
+        </div>
+      </section>
+
+      <section class="critique-page-time">
+        <div class="main-grid">
+            <half-half class="full">
+                <paragraph-block slot="first" class="bg-white">
+                    <div class="paragraphs" slot="paragraph">
+                        <p><b>Current mainstream media is designed to profit off your attention and time.</b></p>
+
+<p><a href="https://www.nytimes.com/2020/01/24/opinion/sunday/surveillance-capitalism.html">Shoshana Zuboff</a> (2020), a professor emerita at the Harvard Business School likens the grasp and influence of social media on our psyche as a means of remote control.  She argues that current surveillance capitalist models of social media “undermines human agency, [usurps] privacy, [diminishes] autonomy and [deprives] individuals of the right to combat.</p>
+
+<b><p>Design choices created to manipulate users are known as deceptive patterns</b> (<a href="https://www.deceptive.design/">Deceptive Patterns</a>, 2023).</p>
+
+<p>Some deceptive patterns that social media employs to keep you on the hamster wheel include infinite scrolling, display of advert-isements in the same style as other content, and unclear privacy policies that are too hard to read.</p>
+                    </div>
+                </paragraph-block>
+                <div class="snippit-block time" slot="second">
+                    <object type="image/svg+xml" data="../assets/img/critique-pie-one.svg"></object>
+                </div>
+            </half-half>
+        </div>
+      </section>
+      <section class="critique-page-profit">
+        <div class="main-grid">
+            <half-half class="full row-reverse">
+                <paragraph-block slot="first" class="bg-white">
+                    <div slot="paragraph">
+                        <p><b>The primary objective of social media is to make a profit.</b></p>
+
+                        <p><b>Social media was never free to begin with. In fact, the internet was primarily funded on debt in the past 20 years</b>  (Cameron Tonkinwise and Mark Titmarsh, SMC Seminar, “What is the Internet?”,  Wed 28 Feb, 2024). </p>
+                        
+                        <p><b>Products and services that operate on debt often begin with features that are beneficial for the users</b> in an effort to take advantage of Metcalfe’s Law of exponential growth, where a network’s value is determined by the number of connected users. </p>
+                        
+                        <p>The value in large networks is that <b>it makes it difficult for people to leave, even when features are being removed, or their privacy and data are being exploited by companies for advertisement.</b></p>
+                    </div>
+                </paragraph-block>
+                <div class="snippit-block profit" slot="second">
+                    <object type="image/svg+xml" data="../assets/img/critique-bars-one.svg"></object>
+                </div>
+            </half-half>
+        </div>
+      </section>
+      <section class="critique-page-quote-twp">
+        <div class="main-grid">
+          <big-quote slot="first" class="full">
+            <p slot="quote">
+                “There's too much content available nowadays due to the low entry barrier to content creation and most are not a value-add.”
+            </p>
+            <span class="attribution text-center" slot="attribution">
+                A <a href="/research">survey</a> participant aged 25–30 who isn't a part of the IndieWeb
+            </span>
+          </big-quote>
+        </div>
+      </section>
+      <section class="critique-page-content">
+        <div class="main-grid">
+            <half-half class="full">
+                <paragraph-block slot="first" class="bg-white">
+                    <div slot="paragraph">
+                        <p><b>Content on social media is often repetitive and mundane and its algorithms make it difficult to find meaningful content.</b></p>
+
+<p>In a video discussing social media with ex-social media employees, <a href="https://www.youtube.com/watch?v=tPsOYuuwybA">Anthony Padilla</a> (2020) reflects on the noticeable changes in social media algorithms.</p>
+
+<p>He highlights that <b>the algorithm now focuses on showing us content that we spend the most time on, rather than quality content we actually like.</b></p>
+
+<p>Social media does not foster authentic and genuine content. With how easy it is to produce AI-generated content, finding authenticity becomes harder than ever before. </p>
+
+<p>AI Instagram influencers are already becoming a thing (<a href="https://www.businessinsider.com/ai-already-replacing-instagram-influencers-jobs-2023-12">Business Insider</a>, 2023)...</p>
+                    </div>
+                </paragraph-block>
+                <div class="snippit-block content" slot="second">
+                    <object type="image/svg+xml" data="../assets/img/critique-bars-two.svg"></object>
+                </div>
+            </half-half>
+        </div>
+      </section>
+      <section class="critique-page-quote-three">
+        <div class="main-grid">
+          <big-quote slot="first" class="full">
+            <p slot="quote">
+                “I’d wish people would see the more diverse internet and not just stay on big commercial platforms.”
+            </p>
+            <span class="attribution text-center" slot="attribution">
+                A <a href="/research">survey</a> participant aged 31–40 who’s a part of the IndieWeb
+            </span>
+          </big-quote>
+        </div>
+      </section>
+    <join-section></join-section>
+    {% endrenderTemplate %}
+</div>

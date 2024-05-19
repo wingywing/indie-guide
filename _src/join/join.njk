@@ -1,0 +1,89 @@
+---
+layout: layouts/home.njk
+navtitle: Joining the IndieWeb
+---
+
+<link rel="stylesheet" href="{{ '/join/join.css' | url }}" />
+
+<div id="join-page">
+  {% renderTemplate "webc" %}
+  <section class="join-page-hero">
+    <hero-block class="transparent">
+      <h1 slot="heading" class="text-white">Joining the IndieWeb</h1>
+      <object slot="bg-image" type="image/svg+xml" data="../assets/img/join-hero.svg"></object>
+    </hero-block>
+  </section>
+  <section class="join-quote">
+    <div class="main-grid">
+      <big-quote slot="first" class="full">
+        <p slot="quote">
+          “Whilst the concept [of IndieWeb] is interesting it does sound complicated to be a part of,and time consuming”</p>
+        <span class="attribution text-center" slot="attribution">
+          A <a href="/research">survey</a> participant aged 28–24 who is interested in joining the IndieWeb
+        </span>
+      </big-quote>
+    </div>
+  </section>
+  <section class="join-quickstart">
+    <div class="main-grid">
+      <div class="first">
+        <h2>A humble quickstart</h2>
+        <p>This quickstart guide hopes to make things as simple as possible for you, so that you can get started in no time!</p>
+        <link-button class="bg-yellow orange" href="#getting-your-own-domain">
+          <p slot="text">1. Getting your own domain</p>
+        </link-button>
+        <link-button class="bg-orange red" href="#building-a-home-on-your-domain">
+          <p slot="text">2. Building a home on your domain</p>
+        </link-button>
+      </div>
+      <div class="second">
+        <object slot="join-quickstart__image" type="image/svg+xml" data="../assets/img/home-page-graphic.svg"></object>
+      </div>
+    </div>
+  </section>
+  <section id="getting-your-own-domain" class="join-domain">
+    <div class="main-grid">
+        <half-half class="full row-reverse">
+            <paragraph-block slot="first" class="bg-white">
+                <div slot="paragraph">
+                  <b>Buying a domain is like buying land.</b>
+
+                  <p>Once you buy it you are free to do whatever you want with it and on it! <a href="https://melonking.net/">No seriously</a>.</p>
+                  
+                  <p>It’s also similar to buying land in the sense that there are multiple platforms (known as registrars) that you can pick from to begin with (and pricing can change depending on which one!).</p>
+                  
+                  <p>To make it easy for you, some recommended domain registrars by IndieWeb users are (<a href="https://indieweb.org/personal-domain">IndieWeb</a>, 2024):</p>
+                  <ul>
+                    <li><a href="https://www.namecheap.com">Namecheap</a> (has good filtering options)</li>
+                    <li><a href="https://porkbun.com/">Porkbun</a></li>
+                    <li><a href="https://www.hover.com/">Hover</a></li>
+                  </ul>
+                  <p>There are many more out there, so feel free to take a look yourself. Most domains are around $25 per year (including indieweb.guide)!</p>
+                </div>
+            </paragraph-block>
+            <div class="image" slot="second">
+                <object type="image/svg+xml" data="../assets/img/join-domain.svg"></object>
+            </div>
+        </half-half>
+    </div>
+  </section>
+  <section id="building-a-home-on-your-domain" class="join-flowchart">
+    <div class="main-grid">
+    <div class="top-section">
+      <div class="first">
+        <h2>A handy flowchart</h2>
+        <p>This flowchart is designed to help you get onto the IndieWeb as easily as possible. Created with feedback from the community on the <a href="https://indieweb.org/discusshttps://indieweb.org/discuss">IndieWeb live chatrooms</a>.</p>
+          <p>More options are available on the <a href="https://www.indieweb.org">IndieWeb wiki</a>.</p>
+      </div>
+      <link-button class="bg-orange yellow text-white" href="https://indieweb.org/discuss">
+      <p slot="text">Join the community on Discord, Slack, or IRC!</p>
+      </link-button>
+    </div>
+    <div class="flow-chart">
+      <object class="flow-chart-img" type="image/svg+xml" data="../assets/img/join-flowchart.svg"></object>
+    </div>
+  </div>
+  </section>
+  <join-section></join-section>
+  {% endrenderTemplate %}
+</div>

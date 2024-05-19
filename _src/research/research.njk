@@ -1,0 +1,164 @@
+---
+layout: layouts/home.njk
+navtitle: Research Methodology and Results
+---
+
+<link rel="stylesheet" href="{{ '/research/research.css' | url }}" />
+
+
+<div id="research-page">
+  {% renderTemplate "webc" %}
+  <section class="research-page-hero">
+    <hero-block class="transparent">
+      <h1 slot="heading">Research Methodology and Results</h1>
+    </hero-block>
+  </section>
+
+  <section class="research-page-time">
+    <div class="main-grid">
+      <half-half class="full">
+        <paragraph-block slot="first" class="bg-white">
+          <div class="paragraphs" slot="paragraph">
+            <p>The research for this project involved multiple parts. This involved:</p>
+            <ol>
+              <li><b>Desktop/whitepaper research</b> (reading through articles about IndieWeb, social media, and the
+                internet <a href="/references">[reference list]</a>)</li>
+              <li><b>Practical research</b> (building <a href="https://wingpang.com">my own website</a> and making it
+                work with IndieWeb standards like webmentions and microformats</li>
+              <li><b>Surveys</b> (collecting feedback from people both within and outside of the IndieWeb community</li>
+              <li><b>Community engagement</b> (joining a session of the <a
+                  href="https://events.indieweb.org/2024/05/homebrew-website-club-global-edition--gKTB1ieoO1lg">online
+                  Homebrew Website Club</a>, joining the first day of the <a
+                  href="https://indieweb.org/2024/D%C3%BCsseldorf/Intros">Düsseldorf IndieWebCamp</a> remotely, and
+                getting feedback from people over at the <a href="https://indieweb.org/discuss">IndieWeb community
+                  chat</a>)</li>
+            </ol>
+          </div>
+        </paragraph-block>
+        <div class="snippit-block time" slot="second">
+          <object type="image/svg+xml" data="../assets/img/research-outline-one.svg"></object>
+        </div>
+      </half-half>
+    </div>
+  </section>
+  <section class="research-page-profit">
+    <div class="main-grid">
+      <half-half class="full">
+        <paragraph-block slot="first" class="transparent">
+          <div slot="paragraph">
+            <h2>Why a survey?</h2>
+            <p><b>An online Google Form</b> survey was chosen for this project since it could reach audiences from all
+              over the world! It’s incredibly easy to share and allows for the participants to complete it at their own
+              pace.</p>
+            <p>The survey was made to be anonymous (participants could divulge their identity if they wished to) and
+              surveyees were allowed to skip questions at will.</p>
+            <p>I distributed the survey through my own social media accounts, and also at the <a
+                href="https://indieweb.org/discuss">IndieWeb community chat</a>, where I got a lot of support in
+              distribution.</p>
+          </div>
+        </paragraph-block>
+        <popup-media class="snippit-block profit" slot="second">
+          <p class="attribution">A screenshot of the survey</p slot="attribution">
+          <img src="../assets/img/research-survey-screenshot.png" alt="Screenshot of the survey form" slot="media">
+        </popup-media>
+      </half-half>
+    </div>
+  </section>
+  <section class="research-survey-design">
+    <div class="main-grid">
+      <h2>Survey Design</h2>
+      <div class="first">
+        <p>The survey was designed to be easy and engaging to complete. It was also <b>designed with the assumption that
+            the participant may not know anything about the IndieWeb.</b></p>
+
+        <p>There were three sections to this survey:</p>
+        <ol>
+          <li><b>Demographic questions</b> (age, gender, and profession)</li>
+          <li><b>Questions relating to social media</b> (usage habits and thoughts)</li>
+          <li><b>Questions surrounding IndieWeb and decentralised social media</b> (a text and video section explaining
+            the concepts, thoughts on these technologies and questions about website ownership)</li>
+        </ol>
+      </div>
+      <link-button class="bg-yellow orange"
+        href="https://docs.google.com/forms/u/1/d/1viJ_Ymr4RCEm3I5wBqfPGyjpF3rKaOyrXoghaQpSuus/edit">
+        <p slot="text" class="text-center">Click here for a live copy of the survey with the questions and sections!</p>
+      </link-button>
+    </div>
+  </section>
+  <section class="research-paragraph-section">
+    <div class="main-grid">
+      <paragraph-block class="bg-white">
+        <div slot="paragraph" class="">
+          <p>In total, there were <b>97 survey participants</b> from various age groups. </p>
+
+          <p>Using snowball sampling methods unfortunately leads to the tendency for participants to recruit people
+            sharing similar traits (<a
+              href="https://www.medwave.cl/revisiones/revisiontemas/8513.html?_view=en">Navarrete, et al.</a>, 2022).
+          </p>
+
+          <p>Most of the participants were working in technology (47.4%) and design (23.7%).</p>
+
+          <p>It’s very like that this is due to my background in design and the sharing of the survey through the
+            IndieWeb community. 68% of participants identified as male, and 28.1% identified as female.</p>
+
+          <p>It would be great to re-conduct this survey at a later date with a wider sample range for greater diversity
+            and more accurate results.</p>
+        </div>
+      </paragraph-block>
+      </half-half>
+    </div>
+  </section>
+  <section class="on-social-media">
+    <div class="main-grid">
+    <half-half class="transparent full">
+      <div class="first" slot="first">
+        <h2>On social media</h2>
+        <p><b>Generally, survey participants had an unfavourable opinion of social media.</b></p>
+
+        <p>Sentimental analysis of long-form replies showed that people were largely concerned/dissatisfied with:</p>
+        <ol>
+        <li>The <b>proliferation of advertisements</b> and the apps being increasingly profit-driven (23/60)</li>
+        <li><b>Addictive qualities</b> of social media apps (16/60)</li>
+        <li><b>Privacy and security</b> concerns (15/60)</li>
+        </ol>
+      <p>Meanwhile, the biggest reason for remaining on social media apps is due to friends and family being on mainstream social media. (<a href="/critique">See more results here</a>)</p>
+      </div>
+      <big-quote class="transparent" slot="second">
+        <p class="quote" slot="quote">
+          “The algorithms prey on people's addictive temperaments for profit. I find myself entering a feedback loop of dopamine stimulation a lot, aka doom-scrolling.”
+        </p>
+        <p class="attribution" slot="attribution">A survey participant aged 25–30 who isn’t a part of the IndieWeb</p>
+      </big-quote>
+    </half-half>
+  </div>
+  </section>
+  <section class="research-page-content">
+    <div class="main-grid">
+        <half-half class="full">
+            <paragraph-block slot="first" class="bg-white">
+                <div slot="paragraph">
+                  <p><b>Many survey participants expressed an interest in IndieWeb and decentalised social media.</b></p>
+
+                  <p>While joining <b>decentralised social media is perceived to have a lower bar of entry</b>, some short-form responses expressed that <b>creating a website and joining the IndieWeb is too complicated for a non-technical user</b> (28/63 responses).</p>
+                </div>
+            </paragraph-block>
+            <div class="snippit-block content" slot="second">
+                <object type="image/svg+xml" data="../assets/img/research-bar.svg"></object>
+            </div>
+        </half-half>
+    </div>
+  </section>
+  <section class="research-conclusion-section">
+    <div class="main-grid">
+      <paragraph-block class="transparent text-center">
+        <div slot="paragraph" class="">
+          <p>From survey results, we can see that there is a big percentage of people who do want a breath of fresh air from mainstream social media.</p>
+          <p>In collaboration with the IndieWeb community, this project was designed as a guide to learn more and get started <br/><br/><a href="/about">[Read more about this project]</a>.</p>
+        </div>
+      </paragraph-block>
+      </half-half>
+    </div>
+  </section>
+  <join-section></join-section>
+  {% endrenderTemplate %}
+</div>

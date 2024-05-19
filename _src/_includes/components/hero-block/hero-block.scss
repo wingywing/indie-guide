@@ -2,6 +2,7 @@
 @import '../../../stylesheets/global/mixins';
 
 hero-block {
+    position: relative;
     display: flex;
     height: max-content;
     transition: all, .3s;
