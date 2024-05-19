@@ -1,0 +1,12 @@
+<join-section>
+    <section class='join-section'>
+        <div class="main-grid">
+        <join-button></join-button>
+        <link-button class="bg-orange text-white yellow" href="https://indieweb.org/discuss">
+            <p slot="text">
+                Join the community on Discord, Slack or IRC!
+            </p>
+        </link-button>
+    </div>
+    </section>
+</join-section>

@@ -6,15 +6,15 @@ navtitle: What is IndieWeb?
 <link rel="stylesheet" href="{{ '/what-is-indieweb/what-is.css' | url }}" />
 
 
-<div class="what-is-page">
+<div id="what-is-page">
     {% renderTemplate "webc" %}
-    <section class="home-page-hero">
+    <section class="what-is-page-hero">
         <hero-block class="transparent">
               <h1 slot="heading">What is the IndieWeb?</h1>
          </hero-block>
       </section>
 
-      <section class="home-page-quote">
+      <section class="what-is-page-quote">
         <div class="main-grid">
           <big-quote slot="first" class="full">
             <p slot="quote">
@@ -27,46 +27,94 @@ navtitle: What is IndieWeb?
         </div>
       </section>
 
-      <section class="home-page-links">
+      <section class="about-page-principles">
         <div class="main-grid">
-        <div class="home-page__link-grid">
-          <div class="row-one">
-            <link-button class="bg-white orange" href="/about">
-              <p slot="text">About this site</p>
-            </link-button>
-            <link-button class="bg-white yellow" href="/what-is-indieweb">
-              <p slot="text">What is IndieWeb?</p>
-            </link-button>
-            <link-button class="bg-white red" href="#">
-              <p slot="text">Building blocks</p>
-            </link-button>
-          </div>
-          <div class="row-two">
-            <div class="left">
-              <join-button></join-button>
+            <div class="title-block">
+                <h2>IndieWeb principles</h2>
+                <span>(<a href="https://indieweb.org">IndieWeb</a>, 2024)</span>
             </div>
-            <div class="right">
-              <link-button class="bg-white yellow" href="#">
-                <p slot="text"><span class="underline">All</span> are welcome!</p>
-              </link-button>
-              <link-button class="bg-white red" href="#">
-                <p slot="text">Critique of current social media</p>
-              </link-button>
-              <link-button class="bg-white yellow" href="#">
-                <p slot="text">Bring back a <span class="underline">fun</span> interweb</p>
-              </link-button>
+            <div class="principles-block">
+                <div class="principle-block domain">
+                    <object type="image/svg+xml" data="../assets/img/square.svg"></object>
+                    <p class="principle-name">
+                        Own your domain
+                    </p>
+                </div>
+                <div class="principle-block publish">
+                    <object type="image/svg+xml" data="../assets/img/triangle.svg"></object>
+                    <p class="principle-name">
+                        Publish on your website
+                    </p>
+                </div>
+                <div class="principle-block content">
+                    <object type="image/svg+xml" data="../assets/img/circle.svg"></object>
+                    <p class="principle-name">
+                        Own your content
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="row-three">
-            <link-button class="bg-white orange" href="#">
-              <p slot="text">Research methodology and results</p>
-            </link-button>
-            <link-button class="bg-white red" href="#">
-              <p slot="text">Reference list</p>
-          </link-button>
-          </div>
         </div>
-      </div>
       </section>
+      <section class="what-is-page-domain">
+        <div class="main-grid">
+            <half-half class="full">
+                <paragraph-block slot="first" class="bg-white">
+                    <div slot="paragraph">
+                        <p><b>Your website should be your home on the internet.</b> Think about introducing yourself to a friend’s friend, or a distant family member. It’s unlikely that you’d introduce yourself as [username] from Instagram or Twitter. You’d introduce yourself as you!</p>
+                        <p><b>Owning your domain lets you introduce yourself as just you</b>, rather than tying your identity to a third-party company or service.</p>
+                        <p>Living on someone else’s platform means that you’ll always be bound by their rules—you never know when all your content (and subsequently your online presence) would be lost.</p>
+                        <p><b>With your own domain</b> (e.g. wingpang.com), <b>even if a service is gone</b> (r.i.p. MySpace), <b>the domain is still yours, and people can still find you.</b></p>
+                    </div>
+                </paragraph-block>
+                <div class="principle-block domain" slot="second">
+                    <object type="image/svg+xml" data="../assets/img/square.svg"></object>
+                    <p class="principle-name">
+                        Own your domain
+                    </p>
+                </div>
+            </half-half>
+        </div>
+      </section>
+      <section class="what-is-page-publish">
+        <div class="main-grid">
+            <half-half class="full row-reverse">
+                <paragraph-block slot="first" class="bg-white">
+                    <div slot="paragraph">
+                        <p>Has the internet began to feel more like a habit rather than something that’s exciting and stimulating to you? It used to not be this way!</p>
+                        <p><b>We’re so used to consuming content online which are designed to be addictive, for the benefit of advertisers.</b> <a href="https://thedisconnect.co/one/escape-the-next-digital-divide/">Alex Beattie</a> (2018), a lecturer at the Centre for Science in Society at Victoria University of Wellington likens our addiction to the current internet as “lab rats, conditioned to anticipate the rewards”.</p>
+                        <p>IndieWeb is a movement against just plain consumption. Publishing on your own website, taking the time to create something and contributing to a community might feel slower, but it is much more rewarding!</p>
+                        <p><b>Your thoughts are important.</b></p>
+                    </div>
+                </paragraph-block>
+                <div class="principle-block publish" slot="second">
+                    <object type="image/svg+xml" data="../assets/img/triangle.svg"></object>
+                    <p class="principle-name">
+                        Publish on your website
+                    </p>
+                </div>
+            </half-half>
+        </div>
+      </section>
+      <section class="what-is-page-content">
+        <div class="main-grid">
+            <half-half class="full">
+                <paragraph-block slot="first" class="bg-white">
+                    <div slot="paragraph">
+                        <p><b>Social media is not free.</b> When you use social media, <b>you’re giving away your content and your data.</b></p>
+                        <p><b>Owning your own website means that your content and data is yours</b>—not to be used for advertising, nor to be used for training for the social media company’s AI. </p>
+                        <p><a href="https://www.scu.edu/ethics/privacy/do-you-own-your-data/">Irinia Raicu</a> (2018), the director of the Internet Ethics program at the Markkula Center for Applied Ethics suggested that we should think of data as not just a thing that is owned by us, but a part of us.</p>
+                        <p><b>Your data are tied to your thoughts and memories, a part of your identity</b> (<a href="https://www.youtube.com/@appliedethicscenter">Markkula Center for Applied Ethics</a>, 2015). You should have a choice in what you choose to share.</p>
+                    </div>
+                </paragraph-block>
+                <div class="principle-block content" slot="second">
+                    <object type="image/svg+xml" data="../assets/img/circle.svg"></object>
+                    <p class="principle-name">
+                        Own your content
+                    </p>
+                </div>
+            </half-half>
+        </div>
+      </section>
+    <join-section></join-section>
     {% endrenderTemplate %}
 </div>

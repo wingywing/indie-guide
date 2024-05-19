@@ -1,0 +1,31 @@
+@import '../../../stylesheets/global/variables';
+@import '../../../stylesheets/global/mixins';
+
+join-section {
+    .main-grid {
+        justify-items: center;
+    }
+    .join-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    join-button, link-button {
+        text-wrap: balance;
+        margin-bottom: 2rem;
+        max-width: 20rem;
+        grid-column: 2/12;
+    }
+    link-button {
+        text-align: center;
+    }
+    @include desktop {
+        join-button {
+            grid-column: 2/7;
+            max-width: unset;
+        }
+        link-button {
+            grid-column: 8/12;
+            max-width: unset;
+        }
+    }
+}
