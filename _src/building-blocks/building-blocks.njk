@@ -1,0 +1,137 @@
+---
+layout: layouts/home.njk
+navtitle: Building blocks of the IndieWeb
+---
+
+<link rel="stylesheet" href="{{ '/building-blocks/building-blocks.css' | url }}" />
+
+<div id="building-blocks-page">
+  {% renderTemplate "webc" %}
+  <section class="building-blocks-page-hero">
+    <hero-block class="transparent">
+      <h1 slot="heading">Building blocks of the IndieWeb</h1>
+    </hero-block>
+  </section>
+  <section class="building-blocks-page-domain">
+    <div class="main-grid">
+      <half-half class="full row-reverse">
+        <paragraph-block slot="first" class="transparent">
+          <div slot="paragraph">
+            <p>
+              The IndieWeb is designed to be modular in nature. It is connected
+              through reusable
+              <b
+                >building blocks of code that can work across different website
+                and apps.</b
+              >
+            </p>
+
+            <p>
+              These are pieces of code that help to facilitate interactions and
+              connect websites to one another. This page will give a general
+              sense of what some common building blocks are, but if you’re a
+              developer, feel free to read more about it on the <a href="https://indieweb.org/Category:building-blocks">IndieWeb wiki</a>
+              (<a href="https://indieweb.org/Category:building-blocks">IndieWeb</a>, 2024)!
+            </p>
+          </div>
+        </paragraph-block>
+        <div class="principle-block domain" slot="second">
+          <object type="image/svg+xml" data="../assets/img/building-first.svg"></object>
+        </div>
+      </half-half>
+    </div>
+  </section>
+  <section cla <section class="building-blocks-page-domain">
+    <div class="main-grid bg-white">
+      <half-half class="full">
+        <paragraph-block slot="first" class="transparent">
+          <div slot="paragraph" class="text-center">
+            <p>
+              The simplest way to explain webmentions is...
+              <b>Imagine if the entire internet had Tumblr-like features.</b>
+            </p>
+
+            <p>
+              Webmentions is a <a href="https://www.w3.org/TR/webmention/">W3C</a> (2017) open standard that allow websites to
+              connect with each other, enabling owners of websites to know when
+              someone else has interacted with their content.
+            </p>
+
+            <p>
+              Some common types of Webmentions include: replies, mentions (think
+              in the lines of a Twitter or Instagram mention), likes and
+              reposts.
+            </p>
+          </div>
+        </paragraph-block>
+        <div class="principle-block domain" slot="second">
+          <object type="image/svg+xml" data="../assets/img/building-webmentions.svg"></object>
+        </div>
+      </half-half>
+    </div>
+  </section>
+  <section class="building-blocks-page-publish">
+    <div class="main-grid bg-white">
+      <half-half class="full row-reverse">
+        <paragraph-block slot="first" class="transparent">
+          <div slot="paragraph" class="text-center">
+            <p>
+              <b
+                >Bits of code that give contextual meaning to content on your
+                website.</b
+              >
+              This allows content that’s posted on one website to be retrieved
+              by another website or application.
+            </p>
+            <p>
+              Microformats (<a href="https://microformats.org/wiki/Main_Page">Microformats</a>, 2024) can be used to link different
+              platforms to your domain, and to make your website your identity
+              in code!
+            </p>
+          </div>
+        </paragraph-block>
+        <div class="principle-block publish" slot="second">
+          <object
+            type="image/svg+xml"
+            data="../assets/img/building-microformats.svg"
+          ></object>
+        </div>
+      </half-half>
+    </div>
+  </section>
+  <section class="building-blocks-page-content">
+    <div class="main-grid bg-white">
+      <half-half class="full">
+        <paragraph-block slot="first" class="transparent">
+          <div slot="paragraph" class="text-center">
+            <p>
+              Metcalfe’s Law of exponential growth dictates that a network is
+              valued on the number of connected users  (Cameron Tonkinwise and
+              Mark Titmarsh, SMC Seminar, “Learning to be Online: From Anonymity
+              to Celebrity/Journaling, Sharing, Promoting/Gaming, Voyeuring”, 
+              Wed 6 Mar, 2024).
+            </p>
+
+            <p>
+              The IndieWeb is still small compared to mainstream social media,
+              but you can keep in touch with loved ones, and encourage people to
+              become interested by
+              <b>Publishing on your Own Site, Syndicating Elsewhere (POSSE)</b>
+              (<a href="https://indieweb.org/POSSE">IndieWeb</a>, 2024).
+            </p>
+
+            <p>
+              The idea is to link your social media posts back to a home on your
+              website!
+            </p>
+          </div>
+        </paragraph-block>
+        <div class="principle-block content" slot="second">
+          <object type="image/svg+xml" data="../assets/img/building-syndication.svg"></object>
+        </div>
+      </half-half>
+    </div>
+  </section>
+  <join-section></join-section>
+  {% endrenderTemplate %}
+</div>
