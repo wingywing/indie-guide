@@ -1,7 +1,11 @@
 @import '../stylesheets/global/mixins';
+@import '../stylesheets/global/variables';
+
 
 #fun-page {
     @include page-base;
+    margin-top: -$header-desktop;
+
     section {
         display: flex;
     }
