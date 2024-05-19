@@ -1,6 +1,6 @@
 <site-footer>
     <div class="main-grid">
         <a class="site-footer__wiki-link" href="https://indieweb.org">Go to the IndieWeb wiki</a>
-        <span class="site-footer__with-love">Open-sourced with love from <a href="http://www.wingpang.com">wingpang.com</a>. 14th May 2024.</span>
+        <span class="site-footer__with-love"><a href="https://github.com/wingywing/indie-guide">Open-sourced</a> with love from <a href="http://www.wingpang.com">wingpang.com</a>. 14th May 2024.</span>
     </div>
 </site-footer>
