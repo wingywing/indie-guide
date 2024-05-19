@@ -1,5 +1,9 @@
 $base-font: 16px;
 
+tspan {
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
 //Defaults
 :root {
     font-size: calc(1.2 * $base-font);
