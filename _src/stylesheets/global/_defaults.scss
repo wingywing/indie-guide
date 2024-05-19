@@ -53,6 +53,7 @@ a {
     text-decoration: underline $yellow;
     text-underline-offset: .2rem;
 }
+
 .main-grid {
     @include main-grid();
     height: 100%;
@@ -111,4 +112,8 @@ $colours: (
     @include desktop {
         flex-direction: row-reverse;
     }
+}
+
+.underline {
+    text-decoration: underline .1rem;
 }
