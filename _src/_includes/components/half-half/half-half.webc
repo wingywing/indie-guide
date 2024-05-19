@@ -1,4 +1,4 @@
-<half-half class="this.class">
+<half-half :class="this.class">
     <slot class="half-half__first" name="first"></slot>
     <slot class="half-half__second" name="second"></slot>
 </half-half>

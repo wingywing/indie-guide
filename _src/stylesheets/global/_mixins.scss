@@ -37,12 +37,29 @@
         width: 100%;
         background-color: $light-grey;
         z-index: -1;
+        bottom: 0;
+        left: 0;
     }
     position: relative;
     display: flex;
     border-collapse: separate; 
     @include bottom-rounded;
     background-color: $lightest-grey;
+}
+
+@mixin page-base {
+    min-height: 100dvh;
+    section {
+        @include main-grid();
+        height: min-content;
+    }
+    section:not(.home-page-hero){
+        padding: 4rem 0;
+    }
+    section:last-of-type{
+        @include round-for-footer;
+        max-width: unset;
+    }
 }
 
 //Colour variables
