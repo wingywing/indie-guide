@@ -2,6 +2,12 @@
 @import '../../../stylesheets/global/mixins';
 
 join-section {
+    &.no-button{
+        link-button {
+            display: none;
+            visibility: hidden;
+        }
+    }
     .main-grid {
         justify-items: center;
     }
