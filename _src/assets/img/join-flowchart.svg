@@ -10,6 +10,7 @@
       //Font imports
       -webkit-font-smoothing: antialiased;
       font-synthesis: none !important;
+      text-rendering: geometricPrecision
       @font-face {
           font-family: 'PPNeueMachina-PlainLight';
           src: url('../../assets/fonts/PPNeueMachina-Light.woff2') format( 'woff2');
@@ -87,9 +88,8 @@
       <rect y="514" width="614" height="429" fill="#ffb100" stroke-width="0"/>
       <g isolation="isolate">
         <text transform="translate(64 599)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">Check out </tspan></text>
-        <text transform="translate(393.68 639)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0" xml:space="preserve"> li</tspan><tspan x="19.5" y="0" letter-spacing="-.04em">k</tspan><tspan x="32.07" y="0" letter-spacing="0em">e: </tspan></text>
         <text transform="translate(252.47 759)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0" xml:space="preserve"> or </tspan></text>
-        <text transform="translate(109 799)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0" letter-spacing="-.03em">f</tspan><tspan x="9.63" y="0">or</tspan><tspan x="36.63" y="0" letter-spacing="-.02em"> </tspan><tspan x="43.17" y="0" letter-spacing="-.05em">T</tspan><tspan x="59.64" y="0">wi</tspan><tspan x="86.1" y="0" letter-spacing="0em">t</tspan><tspan x="96.96" y="0" letter-spacing="-.01em">t</tspan><tspan x="107.07" y="0">er </tspan></text>
+        <text transform="translate(109 799)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0" letter-spacing="-.03em">for Twitter</tspan></text>
         <text transform="translate(194.23 839)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0"> </tspan><tspan x="7.14" y="0" letter-spacing="-.03em">f</tspan><tspan x="16.77" y="0" letter-spacing="0em">or </tspan><tspan x="50.91" y="0" letter-spacing="-.07em">F</tspan><tspan x="66.69" y="0">a</tspan><tspan x="82.05" y="0" letter-spacing="-.02em">c</tspan><tspan x="96.63" y="0">ebook </tspan></text>
         <text transform="translate(229.67 879)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0"> </tspan><tspan x="7.14" y="0" letter-spacing="-.03em">f</tspan><tspan x="16.77" y="0" letter-spacing="0em">or In</tspan><tspan x="74.04" y="0" letter-spacing="-.02em">s</tspan><tspan x="86.52" y="0" letter-spacing="0em">tag</tspan><tspan x="129.42" y="0" letter-spacing="-.03em">r</tspan><tspan x="138.51" y="0">am</tspan></text>
       </g>
@@ -157,8 +157,8 @@
       <a href="https://www.youtube.com/watch?v=HfU20EtgpC8" target="_blank">
         <g isolation="isolate">
           <g isolation="isolate">
-            <text transform="translate(207.32 599)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">d</tspan><tspan x="18.3" y="0" letter-spacing="0em">e</tspan><tspan x="35.55" y="0" letter-spacing="-.01em">c</tspan><tspan x="50.79" y="0">e</tspan><tspan x="67.98" y="0" letter-spacing="-.02em">n</tspan><tspan x="84.99" y="0">t</tspan><tspan x="97.41" y="0" letter-spacing="-.01em">r</tspan><tspan x="108.75" y="0" letter-spacing="0em">ali</tspan><tspan x="140.37" y="0" letter-spacing="0em">s</tspan><tspan x="154.89" y="0" letter-spacing="0em">e</tspan><tspan x="172.14" y="0">d </tspan><tspan x="197.19" y="0" letter-spacing="0em">s</tspan><tspan x="211.71" y="0" xml:space="preserve">ocial </tspan></text>
-            <text transform="translate(64 639)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">m</tspan><tspan x="26.28" y="0" letter-spacing="0em">e</tspan><tspan x="43.53" y="0" letter-spacing="0em">dia on the </tspan><tspan x="188.58" y="0" letter-spacing="-.09em">F</tspan><tspan x="204.9" y="0" letter-spacing="0em">e</tspan><tspan x="222.15" y="0">di</tspan><tspan x="248.01" y="0" letter-spacing="-.02em">v</tspan><tspan x="263.81" y="0">e</tspan><tspan x="281" y="0" letter-spacing="0em">r</tspan><tspan x="292.85" y="0" letter-spacing="0em">s</tspan><tspan x="307.37" y="0">e</tspan></text>
+            <text transform="translate(207.32 599)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">decentralised social</tspan></text>
+            <text transform="translate(64 639)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate"><tspan style="text-decoration: underline;" x="0" y="0">media on the Fediverse</tspan><tspan style="font-weight: normal; text-decoration: none;"> like:</tspan></text>
           </g>
         </g>
       </a>
@@ -237,7 +237,7 @@
       </g>
       <g isolation="isolate">
         <a href="https://indieweb.org/Tutorial_Set_up_an_Indie_Website_using_Blogger" target="_blank">
-          <text transform="translate(554 1709)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">this guide </tspan><tspan x="144.09" y="0" letter-spacing="-.02em">f</tspan><tspan x="155.82" y="0" letter-spacing="0em">or Blogger</tspan></text>
+          <text transform="translate(554 1709)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">this guide for Blogger</tspan></text>
         </a>
       </g>
       <a href="https://indieweb.org/Tumblr">
@@ -283,11 +283,10 @@
         <text transform="translate(1044 2040)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0" letter-spacing="-.02em">R</tspan><tspan x="18.21" y="0" letter-spacing="0em">e</tspan><tspan x="34.35" y="0">ad docume</tspan><tspan x="180.39" y="0" letter-spacing="-.02em">n</tspan><tspan x="195.99" y="0" letter-spacing="0em">t</tspan><tspan x="206.55" y="0" letter-spacing="-.02em">a</tspan><tspan x="221.46" y="0">tion on the </tspan></text>
         <text transform="translate(1237.45 2080)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0" xml:space="preserve"> and </tspan><tspan x="62.7" y="0" letter-spacing="-.03em">f</tspan><tspan x="72.33" y="0">oll</tspan><tspan x="101.85" y="0" letter-spacing="0em">o</tspan><tspan x="118.71" y="0" letter-spacing="0em">w the </tspan><tspan x="196.32" y="0" letter-spacing="-.02em">s</tspan><tspan x="208.8" y="0" letter-spacing="-.01em">t</tspan><tspan x="218.91" y="0" letter-spacing="0em">eps </tspan></text>
         <text transform="translate(1044 2120)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">on </tspan></text>
-        <text transform="translate(1300.46 2120)" fill="#0f0f0f" font-family="RedHatText-Light, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 300" font-weight="300" isolation="isolate"><tspan x="0" y="0">!</tspan></text>
       </g>
       <a href="https://indiewebify.me/" target="_blank">
         <g isolation="isolate">
-          <text transform="translate(1084.66 2120)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" font-variation-settings="&apos;wght&apos; 600" font-weight="600" isolation="isolate" text-decoration="underline"><tspan x="0" y="0">indi</tspan><tspan x="50.88" y="0" letter-spacing="0em">ew</tspan><tspan x="89.58" y="0">ebi</tspan><tspan x="132.66" y="0" letter-spacing="0em">f</tspan><tspan x="145.2" y="0" letter-spacing="-.07em">y</tspan><tspan x="159.3" y="0">.me</tspan></text>
+          <text transform="translate(1084.66 2120)" fill="#0f0f0f" font-family="RedHatTextRoman-SemiBold, &apos;Red Hat Text&apos;, &apos;red-hat-text&apos;" font-size="30" isolation="isolate"><tspan style="text-decoration:underline; font-weight: 600;" x="0" y="0">indiewebify.me</tspan><tspan>!</tspan></text>
         </g>
       </a>
       <a href="https://indieweb.org/Getting_Started" target="_blank">
