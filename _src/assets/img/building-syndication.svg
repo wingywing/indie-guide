@@ -1,5 +1,24 @@
 <svg width="413" height="512" viewBox="0 0 413 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <style type="text/css"><![CDATA[
+      //Font imports
+      -webkit-font-smoothing: antialiased;
+      font-synthesis: none !important;
+      text-rendering: geometricPrecision
+      @font-face {
+          font-family: 'PPNeueMachina-PlainRegular';
+          src: url('../../assets/fonts/PPNeueMachina-Regular.woff2') format( 'woff2');
+          font-weight: normal;
+      }
+      @font-face {
+          font-family: 'PPNeueMachina-PlainMedium';
+          src: url('../../assets/fonts/PPNeueMachina-Medium.woff2') format( 'woff2');
+          font-weight: 500;
+      }
+
+    ]]></style>
+</defs>
 <ellipse cx="105" cy="406.591" rx="105" ry="104.5" fill="#FFB100"/>
 <ellipse cx="263" cy="212.591" rx="150" ry="149.5" fill="#FFB100"/>
-<text transform="translate(143.948 21.395) rotate(-5.85)" fill="#0F0F0F" xml:space="preserve" style="white-space: pre" font-family="PP Neue Machina" font-size="32" font-weight="500" letter-spacing="0em"><tspan x="0.078125" y="22.56">Syndication</tspan></text>
+<text transform="translate(143.948 21.395) rotate(-5.85)" fill="#0F0F0F" xml:space="preserve" style="white-space: pre" font-family="PPNeueMachina-PlainMedium" font-size="32" font-weight="500" letter-spacing="0em"><tspan x="0.078125" y="22.56">Syndication</tspan></text>
 </svg>
