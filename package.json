@@ -34,11 +34,11 @@
     "dotenv": "^6.2.0",
     "lodash": "^4.17.11",
     "luxon": "^1.0.0",
-    "markdown-it": "^14.1.1",
+    "markdown-it": "^14.2.0",
     "markdown-it-anchor": "^5.0.2",
     "node-fetch": "^2.3.0",
     "npm-run-all": "^4.1.5",
-    "sanitize-html": "^2.17.4",
+    "sanitize-html": "^2.17.7",
     "sass": "^1.77.2"
   },
   "dependencies": {
@@ -47,18 +47,25 @@
     "eleventy-sass": "^2.2.4"
   },
   "overrides": {
-    "nanoid": "^5.0.9",
-    "markdown-it": "^14.1.1",
+    "nanoid": "^5.1.16",
+    "markdown-it": "^14.2.0",
     "braces": "^3.0.3",
     "cross-spawn": "^7.0.5",
-    "brace-expansion": "^2.0.3",
-    "ws": "^8.18.0",
+    "brace-expansion": "^2.1.2",
+    "ws": "^8.20.2",
     "handlebars": "^4.7.9",
     "lodash.template": false,
-    "postcss": "^8.5.10",
+    "postcss": "^8.5.23",
     "send": "^0.19.0",
     "serve-static": "^1.16.0",
     "micromatch": "^4.0.8",
-    "tar": "^6.2.1"
+    "tar": "^6.2.1",
+    "immutable": "^4.3.9",
+    "js-yaml": "^3.15.1",
+    "linkify-it": "^5.0.2",
+    "shell-quote": "^1.9.0",
+    "browserslist": "^4.28.7",
+    "sanitize-html": "^2.17.7",
+    "liquidjs": "^10.27.2"
   }
 }
