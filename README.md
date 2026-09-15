@@ -1,3 +1,5 @@
+I used Claude to fix a security vulnerability and now it added itself as a contributor even though all code here was handwritten before AI was cool :(
+
 # An Indie Guide to The IndieWeb
 A simple guide to the IndieWeb by WIng Pang! Please let me know how I can improve this and feel free to add upon it as well.
 
